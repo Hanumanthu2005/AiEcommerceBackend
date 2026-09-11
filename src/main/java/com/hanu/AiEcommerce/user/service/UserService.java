@@ -42,7 +42,7 @@ public class UserService {
                 .lastName(user.getLastName())
                 .email(user.getEmail())
                 .role(user.getRole())
-                .createAt(user.getCreatedAt())
+                .createdAt(user.getCreatedAt())
                 .build();
     }
 }

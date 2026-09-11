@@ -2,10 +2,7 @@ package com.hanu.AiEcommerce.user.entity;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
@@ -19,6 +16,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class User {
 
@@ -32,10 +30,10 @@ public class User {
     @Column(nullable = false, length = 50)
     private String lastName;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false, length = 255)
     private String email;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false, length = 255)
     private String password;
 
     @Enumerated(EnumType.STRING)
