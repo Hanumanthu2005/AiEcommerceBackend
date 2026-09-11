@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hanu</groupId>
-	<artifactId>AiEcommerce</artifactId>
+	<artifactId>aiecommerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
