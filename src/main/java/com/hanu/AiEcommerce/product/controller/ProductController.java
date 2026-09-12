@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 
 @RestController
@@ -63,4 +64,5 @@ public class ProductController {
                 productService.getAllProducts(pageable, request)
         );
     }
+
 }

@@ -1,6 +1,10 @@
 package com.hanu.AiEcommerce.product.repository;
 
 import com.hanu.AiEcommerce.product.entity.Product;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
@@ -15,4 +19,11 @@ public interface ProductRepository
     Optional<Product> findBySku(String sku);
 
     boolean existsBySku(String sku);
+
+    @Override
+    @EntityGraph(attributePaths = {"category"})
+    Page<Product> findAll(
+            Specification specification,
+            Pageable pageable
+    );
 }
