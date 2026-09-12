@@ -1,5 +1,6 @@
 package com.hanu.AiEcommerce.product.service;
 
+import com.hanu.AiEcommerce.common.exception.DuplicateResourceException;
 import com.hanu.AiEcommerce.product.dto.CategoryResponse;
 import com.hanu.AiEcommerce.product.dto.CreateCategoryRequest;
 import com.hanu.AiEcommerce.product.entity.Category;
@@ -18,7 +19,7 @@ public class CategoryService {
     public CategoryResponse createCategory(CreateCategoryRequest request) {
 
         if(categoryRepository.existsByNameIgnoreCase(request.name())) {
-            throw new IllegalArgumentException("Category already exists by name" + request.name());
+            throw new DuplicateResourceException("Category already exists by name " + request.name());
         }
 
         Category category = Category.builder()

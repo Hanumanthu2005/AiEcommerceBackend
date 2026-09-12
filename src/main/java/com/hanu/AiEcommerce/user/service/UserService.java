@@ -1,5 +1,6 @@
 package com.hanu.AiEcommerce.user.service;
 
+import com.hanu.AiEcommerce.common.exception.DuplicateResourceException;
 import com.hanu.AiEcommerce.user.dto.CreateUserRequest;
 import com.hanu.AiEcommerce.user.dto.UserResponse;
 import com.hanu.AiEcommerce.user.entity.User;
@@ -18,7 +19,7 @@ public class UserService {
     public UserResponse createUser(CreateUserRequest request) {
 
         if (userRepository.existsByEmail(request.email())) {
-            throw new IllegalArgumentException("User is alredy exist with email");
+            throw new DuplicateResourceException("User is alredy exist with email " + request.email());
         }
 
         User user = User.builder()

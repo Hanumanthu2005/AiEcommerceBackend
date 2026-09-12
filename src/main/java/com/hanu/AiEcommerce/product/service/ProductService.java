@@ -1,5 +1,7 @@
 package com.hanu.AiEcommerce.product.service;
 
+import com.hanu.AiEcommerce.common.exception.DuplicateResourceException;
+import com.hanu.AiEcommerce.common.exception.ResourceNotFoundException;
 import com.hanu.AiEcommerce.product.dto.CreateProductRequest;
 import com.hanu.AiEcommerce.product.dto.ProductFilterRequest;
 import com.hanu.AiEcommerce.product.dto.ProductResponse;
@@ -15,7 +17,6 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
 
 
 @Service
@@ -29,11 +30,11 @@ public class ProductService {
     public ProductResponse createProduct(CreateProductRequest request) {
 
         if(productRepository.existsBySku(request.sku())) {
-            throw new IllegalArgumentException("Product already exists by sku" + request.sku());
+            throw new DuplicateResourceException("Product already exists by sku " + request.sku());
         }
 
         Category category = categoryRepository.findById(request.categoryId())
-                .orElseThrow(() -> new IllegalArgumentException("Category not found with category Id" + request.categoryId()));
+                .orElseThrow(() -> new ResourceNotFoundException("Category not found with category Id " + request.categoryId()));
 
         Product product = Product.builder()
                 .name(request.name())
@@ -53,7 +54,7 @@ public class ProductService {
     public ProductResponse getProductById(Long id) {
 
         Product product = productRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Product not found with id" + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Product not found with id " + id));
 
         return mapToResponse(product);
     }
