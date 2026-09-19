@@ -46,7 +46,7 @@ public class InventoryController {
             AdjustStockRequest request
     ) {
         return ResponseEntity.ok(
-                inventoryService.adjustStock(productId, request)
+                inventoryService.adjustStock(productId, request.quantity())
         );
     }
 
@@ -61,7 +61,7 @@ public class InventoryController {
     ) {
 
         return ResponseEntity.ok(
-                inventoryService.reserveStock(productId, request)
+                inventoryService.reserveStock(productId, request.quantity())
         );
     }
 
@@ -76,7 +76,7 @@ public class InventoryController {
     ) {
 
         return ResponseEntity.ok(
-                inventoryService.releaseStock(productId, request)
+                inventoryService.releaseStock(productId, request.quantity())
         );
     }
 }
