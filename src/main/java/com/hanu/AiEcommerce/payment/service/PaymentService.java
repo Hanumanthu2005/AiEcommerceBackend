@@ -2,7 +2,6 @@ package com.hanu.AiEcommerce.payment.service;
 
 
 import com.hanu.AiEcommerce.common.exception.DuplicateResourceException;
-import com.hanu.AiEcommerce.common.exception.InvalidOrderStateException;
 import com.hanu.AiEcommerce.common.exception.InvalidPaymentStateException;
 import com.hanu.AiEcommerce.common.exception.ResourceNotFoundException;
 import com.hanu.AiEcommerce.order.entity.Order;
@@ -13,8 +12,11 @@ import com.hanu.AiEcommerce.payment.dto.PaymentRequest;
 import com.hanu.AiEcommerce.payment.dto.PaymentResponse;
 import com.hanu.AiEcommerce.payment.entity.Payment;
 import com.hanu.AiEcommerce.payment.enums.PaymentStatus;
+import com.hanu.AiEcommerce.payment.event.PaymentFailedEvent;
+import com.hanu.AiEcommerce.payment.event.PaymentSucceededEvent;
 import com.hanu.AiEcommerce.payment.repository.PaymentRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,6 +27,7 @@ public class PaymentService {
     private final PaymentRepository paymentRepository;
     private final OrderRepository orderRepository;
     private final OrderService orderService;
+    private final ApplicationEventPublisher eventPublisher;
 
     @Transactional
     public PaymentResponse createPayment(PaymentRequest request) {
@@ -79,11 +82,23 @@ public class PaymentService {
         payment.setTransactionId(transactionId);
 
         if(status == PaymentStatus.SUCCESS) {
-            orderService.confirmOrder(payment.getOrderId());
+            eventPublisher.publishEvent(
+                    new PaymentSucceededEvent(
+                            payment.getId(),
+                            payment.getOrderId(),
+                            payment.getTransactionId()
+                    )
+            );
         }
 
         if(status == PaymentStatus.FAILED) {
-            orderService.cancelOrderAfterPaymentFailure(payment.getOrderId());
+            eventPublisher.publishEvent(
+                    new PaymentFailedEvent(
+                            payment.getId(),
+                            payment.getOrderId(),
+                            payment.getTransactionId()
+                    )
+            );
         }
 
         payment = paymentRepository.save(payment);
