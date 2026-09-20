@@ -13,6 +13,7 @@ import com.hanu.AiEcommerce.order.repository.OrderRepository;
 import com.hanu.AiEcommerce.product.entity.Product;
 import com.hanu.AiEcommerce.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.aspectj.weaver.ast.Or;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -122,6 +123,56 @@ public class OrderService {
         if(!order.getStatus().equals(OrderStatus.PENDING)) {
             throw new InvalidOrderStateException(
                     "Only pending order can be cancelled"
+            );
+        }
+
+        for(OrderItem item : order.getItems()) {
+
+            inventoryService.releaseStock(
+                    item.getProductId(),
+                    item.getQuantity()
+            );
+        }
+
+        order.setStatus(OrderStatus.CANCELLED);
+
+        order = orderRepository.save(order);
+
+        return mapToResponse(order);
+    }
+
+    @Transactional
+    public OrderResponse confirmOrder(Long orderId) {
+
+        Order order = orderRepository.findById(orderId)
+                .orElseThrow(() -> new ResourceNotFoundException(
+                        "Order not found with id " + orderId
+                ));
+
+        if(!order.getStatus().equals(OrderStatus.PENDING)) {
+            throw new InvalidOrderStateException(
+                    "Order cannot be confirmed from staus " + order.getStatus()
+            );
+        }
+
+        order.setStatus(OrderStatus.CONFIRMED);
+
+        order = orderRepository.save(order);
+
+        return mapToResponse(order);
+    }
+
+    @Transactional
+    public OrderResponse cancelOrderAfterPaymentFailure(Long orderId) {
+
+        Order order = orderRepository.findById(orderId)
+                .orElseThrow(() -> new ResourceNotFoundException(
+                        "Order not found with id " + orderId
+                ));
+
+        if(!order.getStatus().equals(OrderStatus.PENDING)) {
+            throw new InvalidOrderStateException(
+                    "Order cannot be cancelled from staus " + order.getStatus()
             );
         }
 

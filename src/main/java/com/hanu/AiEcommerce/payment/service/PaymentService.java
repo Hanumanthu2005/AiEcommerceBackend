@@ -8,6 +8,7 @@ import com.hanu.AiEcommerce.common.exception.ResourceNotFoundException;
 import com.hanu.AiEcommerce.order.entity.Order;
 import com.hanu.AiEcommerce.order.enums.OrderStatus;
 import com.hanu.AiEcommerce.order.repository.OrderRepository;
+import com.hanu.AiEcommerce.order.service.OrderService;
 import com.hanu.AiEcommerce.payment.dto.PaymentRequest;
 import com.hanu.AiEcommerce.payment.dto.PaymentResponse;
 import com.hanu.AiEcommerce.payment.entity.Payment;
@@ -23,6 +24,7 @@ public class PaymentService {
 
     private final PaymentRepository paymentRepository;
     private final OrderRepository orderRepository;
+    private final OrderService orderService;
 
     @Transactional
     public PaymentResponse createPayment(PaymentRequest request) {
@@ -75,6 +77,14 @@ public class PaymentService {
 
         payment.setStatus(status);
         payment.setTransactionId(transactionId);
+
+        if(status == PaymentStatus.SUCCESS) {
+            orderService.confirmOrder(payment.getOrderId());
+        }
+
+        if(status == PaymentStatus.FAILED) {
+            orderService.cancelOrderAfterPaymentFailure(payment.getOrderId());
+        }
 
         payment = paymentRepository.save(payment);
 
