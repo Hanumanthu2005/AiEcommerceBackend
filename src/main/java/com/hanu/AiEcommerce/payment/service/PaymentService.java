@@ -17,7 +17,6 @@ import com.hanu.AiEcommerce.payment.event.PaymentFailedEvent;
 import com.hanu.AiEcommerce.payment.event.PaymentSucceededEvent;
 import com.hanu.AiEcommerce.payment.repository.PaymentRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -27,7 +26,6 @@ public class PaymentService {
 
     private final PaymentRepository paymentRepository;
     private final OrderRepository orderRepository;
-    private final ApplicationEventPublisher eventPublisher;
     private final KafkaEventProducer kafkaEventProducer;
 
     @Transactional
@@ -95,26 +93,6 @@ public class PaymentService {
                 payment.getOrderId().toString(),
                 paymentEvent
         );
-
-        if(status == PaymentStatus.SUCCESS) {
-            eventPublisher.publishEvent(
-                    new PaymentSucceededEvent(
-                            payment.getId(),
-                            payment.getOrderId(),
-                            payment.getTransactionId()
-                    )
-            );
-        }
-
-        if(status == PaymentStatus.FAILED) {
-            eventPublisher.publishEvent(
-                    new PaymentFailedEvent(
-                            payment.getId(),
-                            payment.getOrderId(),
-                            payment.getTransactionId()
-                    )
-            );
-        }
 
         payment = paymentRepository.save(payment);
 
