@@ -1,13 +1,14 @@
 package com.hanu.AiEcommerce.payment.service;
 
 
+import com.hanu.AiEcommerce.common.event.PaymentEvent;
 import com.hanu.AiEcommerce.common.exception.DuplicateResourceException;
 import com.hanu.AiEcommerce.common.exception.InvalidPaymentStateException;
 import com.hanu.AiEcommerce.common.exception.ResourceNotFoundException;
+import com.hanu.AiEcommerce.common.kafka.KafkaEventProducer;
 import com.hanu.AiEcommerce.order.entity.Order;
 import com.hanu.AiEcommerce.order.enums.OrderStatus;
 import com.hanu.AiEcommerce.order.repository.OrderRepository;
-import com.hanu.AiEcommerce.order.service.OrderService;
 import com.hanu.AiEcommerce.payment.dto.PaymentRequest;
 import com.hanu.AiEcommerce.payment.dto.PaymentResponse;
 import com.hanu.AiEcommerce.payment.entity.Payment;
@@ -26,8 +27,8 @@ public class PaymentService {
 
     private final PaymentRepository paymentRepository;
     private final OrderRepository orderRepository;
-    private final OrderService orderService;
     private final ApplicationEventPublisher eventPublisher;
+    private final KafkaEventProducer kafkaEventProducer;
 
     @Transactional
     public PaymentResponse createPayment(PaymentRequest request) {
@@ -80,6 +81,20 @@ public class PaymentService {
 
         payment.setStatus(status);
         payment.setTransactionId(transactionId);
+
+        PaymentEvent paymentEvent = new PaymentEvent(
+                status == PaymentStatus.SUCCESS
+                ? "PAYMENT_SUCCEEDED" : "PAYMENT_FAILED",
+                payment.getId(),
+                payment.getOrderId(),
+                payment.getTransactionId()
+        );
+
+        kafkaEventProducer.publish(
+                "payment.events",
+                payment.getOrderId().toString(),
+                paymentEvent
+        );
 
         if(status == PaymentStatus.SUCCESS) {
             eventPublisher.publishEvent(
