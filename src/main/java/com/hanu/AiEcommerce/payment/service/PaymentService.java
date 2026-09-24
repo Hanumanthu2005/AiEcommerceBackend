@@ -5,7 +5,6 @@ import com.hanu.AiEcommerce.common.event.PaymentEvent;
 import com.hanu.AiEcommerce.common.exception.DuplicateResourceException;
 import com.hanu.AiEcommerce.common.exception.InvalidPaymentStateException;
 import com.hanu.AiEcommerce.common.exception.ResourceNotFoundException;
-import com.hanu.AiEcommerce.common.kafka.KafkaEventProducer;
 import com.hanu.AiEcommerce.common.outbox.OutboxEventService;
 import com.hanu.AiEcommerce.order.entity.Order;
 import com.hanu.AiEcommerce.order.enums.OrderStatus;
@@ -27,7 +26,6 @@ public class PaymentService {
 
     private final PaymentRepository paymentRepository;
     private final OrderRepository orderRepository;
-    private final KafkaEventProducer kafkaEventProducer;
     private final OutboxEventService outboxEventService;
 
     @Transactional

@@ -1,6 +1,7 @@
 package com.hanu.AiEcommerce.common.outbox;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hanu.AiEcommerce.common.event.PaymentEvent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -23,9 +24,9 @@ public class OutboxEventPublisher {
 
             try {
 
-                Object payload = objectMapper.readValue(
+                PaymentEvent payload = objectMapper.readValue(
                         event.getPayload(),
-                        Object.class
+                        PaymentEvent.class
                 );
 
                 kafkaTemplate.send(
