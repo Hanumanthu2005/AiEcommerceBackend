@@ -49,12 +49,12 @@ public class OutboxEvent {
     private boolean published;
 
     @Column(name = "created_at", nullable = false, updatable = false)
-    private LocalDateTime createAt;
+    private LocalDateTime createdAt;
 
     @PrePersist
     protected void onCreate() {
 
-        createAt = LocalDateTime.now();
+        createdAt = LocalDateTime.now();
 
         published = false;
     }

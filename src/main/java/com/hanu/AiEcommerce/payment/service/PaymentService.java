@@ -6,6 +6,7 @@ import com.hanu.AiEcommerce.common.exception.DuplicateResourceException;
 import com.hanu.AiEcommerce.common.exception.InvalidPaymentStateException;
 import com.hanu.AiEcommerce.common.exception.ResourceNotFoundException;
 import com.hanu.AiEcommerce.common.kafka.KafkaEventProducer;
+import com.hanu.AiEcommerce.common.outbox.OutboxEventService;
 import com.hanu.AiEcommerce.order.entity.Order;
 import com.hanu.AiEcommerce.order.enums.OrderStatus;
 import com.hanu.AiEcommerce.order.repository.OrderRepository;
@@ -13,8 +14,6 @@ import com.hanu.AiEcommerce.payment.dto.PaymentRequest;
 import com.hanu.AiEcommerce.payment.dto.PaymentResponse;
 import com.hanu.AiEcommerce.payment.entity.Payment;
 import com.hanu.AiEcommerce.payment.enums.PaymentStatus;
-import com.hanu.AiEcommerce.payment.event.PaymentFailedEvent;
-import com.hanu.AiEcommerce.payment.event.PaymentSucceededEvent;
 import com.hanu.AiEcommerce.payment.repository.PaymentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -29,6 +28,7 @@ public class PaymentService {
     private final PaymentRepository paymentRepository;
     private final OrderRepository orderRepository;
     private final KafkaEventProducer kafkaEventProducer;
+    private final OutboxEventService outboxEventService;
 
     @Transactional
     public PaymentResponse createPayment(PaymentRequest request) {
@@ -91,9 +91,10 @@ public class PaymentService {
                 payment.getTransactionId()
         );
 
-        kafkaEventProducer.publish(
-                "payment.events",
-                payment.getOrderId().toString(),
+        outboxEventService.saveEvent(
+                paymentEvent.eventType(),
+                "PAYMENT",
+                payment.getId().toString(),
                 paymentEvent
         );
 
