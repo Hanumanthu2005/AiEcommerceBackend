@@ -20,6 +20,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.UUID;
+
 @Service
 @RequiredArgsConstructor
 public class PaymentService {
@@ -81,6 +83,7 @@ public class PaymentService {
         payment.setTransactionId(transactionId);
 
         PaymentEvent paymentEvent = new PaymentEvent(
+                UUID.randomUUID().toString(),
                 status == PaymentStatus.SUCCESS
                 ? "PAYMENT_SUCCEEDED" : "PAYMENT_FAILED",
                 payment.getId(),
