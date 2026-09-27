@@ -34,7 +34,6 @@ public class OutboxEventService {
                     .aggregateType(aggregateType)
                     .payload(payload)
                     .eventType(eventType)
-                    .published(false)
                     .build();
 
             outboxEventRepository.save(outboxEvent);

@@ -2,6 +2,7 @@ package com.hanu.AiEcommerce.common.outbox;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.cglib.core.Local;
 
 import java.time.LocalDateTime;
 
@@ -10,8 +11,8 @@ import java.time.LocalDateTime;
     name = "outbox_events",
     indexes = {
             @Index(
-                    name = "idx_outbox_published",
-                    columnList = "published"
+                    name = "idx_outbox_status_next_attempt",
+                    columnList = "status, next_attempt_at"
             ),
             @Index(
                     name = "idx_outbox_created_at",
@@ -45,17 +46,41 @@ public class OutboxEvent {
     @Column(name = "payload", nullable = false, columnDefinition = "TEXT")
     private String payload;
 
-    @Column(nullable = false)
-    private boolean published;
+    @Column(name = "retry_count", nullable = false)
+    @Builder.Default
+    private Integer retryCount = 0;
+
+    @Column(name = "processing_started_at")
+    private LocalDateTime processingStartedAt;
+
+    @Column(name = "last_attempt_at")
+    private LocalDateTime lastAttemptAt;
+
+    @Column(name = "next_attempt_at")
+    private LocalDateTime nextAttemptAt;
+
+    @Column(name = "last_error", columnDefinition = "TEXT")
+    private String lastError;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status", nullable = false)
+    @Builder.Default
+    private OutboxStatus status = OutboxStatus.PENDING;
 
     @PrePersist
     protected void onCreate() {
 
         createdAt = LocalDateTime.now();
 
-        published = false;
+        if(retryCount == null) {
+            retryCount = 0;
+        }
+
+        if(status == null) {
+            status = OutboxStatus.PENDING;
+        }
     }
 }
