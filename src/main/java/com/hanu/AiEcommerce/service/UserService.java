@@ -1,4 +1,4 @@
-package com.hanu.AiEcommerce.user.service;
+package com.hanu.AiEcommerce.service;
 
 import com.hanu.AiEcommerce.common.exception.DuplicateResourceException;
 import com.hanu.AiEcommerce.user.dto.CreateUserRequest;
@@ -7,6 +7,7 @@ import com.hanu.AiEcommerce.user.entity.User;
 import com.hanu.AiEcommerce.user.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Transactional
     public UserResponse createUser(CreateUserRequest request) {
@@ -26,7 +28,7 @@ public class UserService {
                 .firstName(request.firstName())
                 .lastName(request.lastName())
                 .email(request.email())
-                .password(request.password())
+                .password(passwordEncoder.encode(request.password()))
                 .build();
 
         user = userRepository.save(user);

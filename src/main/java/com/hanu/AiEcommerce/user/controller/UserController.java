@@ -2,7 +2,7 @@ package com.hanu.AiEcommerce.user.controller;
 
 import com.hanu.AiEcommerce.user.dto.CreateUserRequest;
 import com.hanu.AiEcommerce.user.dto.UserResponse;
-import com.hanu.AiEcommerce.user.service.UserService;
+import com.hanu.AiEcommerce.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
