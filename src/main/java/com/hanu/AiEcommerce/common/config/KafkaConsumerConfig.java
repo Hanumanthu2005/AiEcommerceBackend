@@ -24,7 +24,7 @@ public class KafkaConsumerConfig {
 
         properties.put(
                 ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
-                "localhost:9092"
+                "kafka:9092"
         );
 
         properties.put(
