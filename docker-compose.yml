@@ -21,6 +21,21 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
 
+  postgres:
+    image: postgres:17
+    container_name: postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    networks:
+      - ecommerce-network
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ecommerce_db
+    volumes:
+      - /home/hanu/server/postgres/data:/var/lib/postgresql/data
+
   backend:
     image: aiecommerce-backend:latest
     container_name: aiecommerce-backend
