@@ -5,11 +5,11 @@ import com.hanu.AiEcommerce.order.dto.OrderResponse;
 import com.hanu.AiEcommerce.order.service.OrderService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.aspectj.weaver.ast.Or;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -19,15 +19,21 @@ public class OrderController {
 
     private final OrderService orderService;
 
+    private Long getAuthenticatedUserId(Authentication authentication) {
+        return Long.parseLong(authentication.getName());
+    }
+
     @PostMapping
     public ResponseEntity<OrderResponse> createOrder(
-            @RequestHeader("X-User-Id")
-            Long userId,
+            Authentication authentication,
 
             @Valid
             @RequestBody
             CreateOrderRequest request
     ) {
+
+        Long userId = getAuthenticatedUserId(authentication);
+
         OrderResponse response = orderService.createOrder(
                 userId,
                 request
@@ -43,9 +49,11 @@ public class OrderController {
             @PathVariable
             Long orderId,
 
-            @RequestHeader("X-User-Id")
-            Long userId
+            Authentication authentication
     ) {
+
+        Long userId = getAuthenticatedUserId(authentication);
+
         return ResponseEntity.ok(
                 orderService.getOrderById(orderId, userId)
         );
@@ -53,11 +61,13 @@ public class OrderController {
 
     @GetMapping("/my-orders")
     public ResponseEntity<Page<OrderResponse>> getMyOrders(
-            @RequestHeader("X-User-Id")
-            Long userId,
+            Authentication authentication,
 
             Pageable pageable
     ) {
+
+        Long userId = getAuthenticatedUserId(authentication);
+
         return ResponseEntity
                 .ok(orderService.getByUserId(userId, pageable));
     }
@@ -67,9 +77,10 @@ public class OrderController {
             @PathVariable
             Long orderId,
 
-            @RequestHeader("X-User-Id")
-            Long userId
+            Authentication authentication
     ) {
+
+        Long userId = getAuthenticatedUserId(authentication);
 
         return ResponseEntity
                 .ok(orderService.cancelOrder(orderId, userId));
