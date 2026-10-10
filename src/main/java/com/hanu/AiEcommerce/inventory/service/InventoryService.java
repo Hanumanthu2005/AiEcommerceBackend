@@ -1,10 +1,13 @@
+
 package com.hanu.AiEcommerce.inventory.service;
 
 import com.hanu.AiEcommerce.common.exception.*;
 import com.hanu.AiEcommerce.inventory.dto.*;
 import com.hanu.AiEcommerce.inventory.entity.Inventory;
 import com.hanu.AiEcommerce.inventory.repository.InventoryRepository;
+import com.hanu.AiEcommerce.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,13 +16,44 @@ import org.springframework.transaction.annotation.Transactional;
 public class InventoryService {
 
     private final InventoryRepository inventoryRepository;
+    private final ProductRepository productRepository;
+
+    private void checkProductAccess(
+            Long productId,
+            Long userId,
+            boolean isAdmin
+    ) {
+        if (isAdmin) {
+            if (!productRepository.existsById(productId)) {
+                throw new ResourceNotFoundException(
+                        "Product not found with id " + productId
+                );
+            }
+            return;
+        }
+
+        boolean ownsProduct = productRepository
+                .existsByIdAndSellerId(productId, userId);
+
+        if (!ownsProduct) {
+            throw new AccessDeniedException(
+                    "You are not authorized to manage this product's inventory"
+            );
+        }
+    }
 
     @Transactional
-    public InventoryResponse createInventory(CreateInventoryRequest request) {
+    public InventoryResponse createInventory(
+            CreateInventoryRequest request,
+            Long userId,
+            boolean isAdmin
+    ) {
+        checkProductAccess(request.productId(), userId, isAdmin);
 
-        if(inventoryRepository.existsByProductId(request.productId())) {
+        if (inventoryRepository.existsByProductId(request.productId())) {
             throw new DuplicateResourceException(
-                    "Inventory already exist with product id " + request.productId()
+                    "Inventory already exists for product id "
+                            + request.productId()
             );
         }
 
@@ -29,19 +63,22 @@ public class InventoryService {
                 .reservedQuantity(0)
                 .build();
 
-        inventory = inventoryRepository.save(inventory);
-
-        return mapToResponse(inventory);
+        return mapToResponse(inventoryRepository.save(inventory));
     }
 
     @Transactional(readOnly = true)
-    public InventoryResponse getInventoryByProductId(Long productId) {
+    public InventoryResponse getInventoryByProductId(
+            Long productId,
+            Long userId,
+            boolean isAdmin
+    ) {
+        checkProductAccess(productId, userId, isAdmin);
 
-        Inventory inventory = inventoryRepository.findByProductId(productId)
-                .orElseThrow( () -> new ResourceNotFoundException(
-                        "Inventory not found with id " + productId
-                        )
-                );
+        Inventory inventory = inventoryRepository
+                .findByProductId(productId)
+                .orElseThrow(() -> new ResourceNotFoundException(
+                        "Inventory not found for product id " + productId
+                ));
 
         return mapToResponse(inventory);
     }
@@ -49,29 +86,37 @@ public class InventoryService {
     @Transactional
     public InventoryResponse adjustStock(
             Long productId,
-            Integer quantity
+            Integer quantity,
+            Long userId,
+            boolean isAdmin
     ) {
+        checkProductAccess(productId, userId, isAdmin);
 
-        Inventory inventory = inventoryRepository.findByProductId(productId)
+        Inventory inventory = inventoryRepository
+                .findByProductId(productId)
                 .orElseThrow(() -> new ResourceNotFoundException(
-                        "Inventory not found with id " + productId
+                        "Inventory not found for product id " + productId
                 ));
 
-        int newQuantity = inventory.getQuantity() + quantity;
+        int newQuantity = Math.addExact(
+                inventory.getQuantity(), quantity
+        );
 
-        if(newQuantity < inventory.getReservedQuantity()) {
-            throw new InvalidStockAdjustmentException("Stock cannot be reduced below reserved stock");
+        if (newQuantity < inventory.getReservedQuantity()) {
+            throw new InvalidStockAdjustmentException(
+                    "Stock cannot be reduced below reserved stock"
+            );
         }
 
-        if(newQuantity < 0) {
-            throw new InvalidStockAdjustmentException("Stock quantity cannot be negative");
+        if (newQuantity < 0) {
+            throw new InvalidStockAdjustmentException(
+                    "Stock quantity cannot be negative"
+            );
         }
 
         inventory.setQuantity(newQuantity);
 
-        inventory = inventoryRepository.save(inventory);
-
-        return mapToResponse(inventory);
+        return mapToResponse(inventoryRepository.save(inventory));
     }
 
     @Transactional
@@ -79,17 +124,21 @@ public class InventoryService {
             Long productId,
             Integer quantity
     ) {
+        if (quantity == null || quantity <= 0) {
+            throw new IllegalArgumentException(
+                    "Reservation quantity must be positive"
+            );
+        }
 
-        Inventory inventory = inventoryRepository.findByProductId(productId)
+        Inventory inventory = inventoryRepository
+                .findByProductId(productId)
                 .orElseThrow(() -> new ResourceNotFoundException(
-                        "Inventory not found with id " + productId
+                        "Inventory not found for product id " + productId
                 ));
 
-        if(inventory.getAvailableQuantity() < quantity) {
+        if (inventory.getAvailableQuantity() < quantity) {
             throw new InsufficientStockException(
-                    "Insufficient stock for product with id " + productId
-                    + ", Available stock " + inventory.getAvailableQuantity()
-                    + ", Request stock " + quantity
+                    "Insufficient stock for product id " + productId
             );
         }
 
@@ -97,9 +146,7 @@ public class InventoryService {
                 inventory.getReservedQuantity() + quantity
         );
 
-        inventory = inventoryRepository.save(inventory);
-
-        return mapToResponse(inventory);
+        return mapToResponse(inventoryRepository.save(inventory));
     }
 
     @Transactional
@@ -107,30 +154,32 @@ public class InventoryService {
             Long productId,
             Integer quantity
     ) {
+        if (quantity == null || quantity <= 0) {
+            throw new IllegalArgumentException(
+                    "Release quantity must be positive"
+            );
+        }
 
-        Inventory inventory = inventoryRepository.findByProductId(productId)
+        Inventory inventory = inventoryRepository
+                .findByProductId(productId)
                 .orElseThrow(() -> new ResourceNotFoundException(
-                        "Inventory not found with product id " + productId
+                        "Inventory not found for product id " + productId
                 ));
 
-        if(quantity > inventory.getReservedQuantity()) {
-            throw new InvalidStockReleaseException("Cannot release more stock than currently reserved");
+        if (quantity > inventory.getReservedQuantity()) {
+            throw new InvalidStockReleaseException(
+                    "Cannot release more stock than currently reserved"
+            );
         }
 
         inventory.setReservedQuantity(
                 inventory.getReservedQuantity() - quantity
         );
 
-        inventory = inventoryRepository.save(inventory);
-
-        return mapToResponse(inventory);
+        return mapToResponse(inventoryRepository.save(inventory));
     }
 
-
-    // ===============   HELPER ==================
-
     private InventoryResponse mapToResponse(Inventory inventory) {
-
         return new InventoryResponse(
                 inventory.getId(),
                 inventory.getProductId(),

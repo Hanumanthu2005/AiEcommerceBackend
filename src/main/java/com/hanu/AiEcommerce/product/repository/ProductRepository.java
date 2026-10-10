@@ -24,4 +24,8 @@ public interface ProductRepository
             Specification specification,
             Pageable pageable
     );
+
+    Optional<Product> findByIdAndSellerId(Long id, Long sellerId);
+
+    boolean existsByIdAndSellerId(Long id, Long sellerId);
 }

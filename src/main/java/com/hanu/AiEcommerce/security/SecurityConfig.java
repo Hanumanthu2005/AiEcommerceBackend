@@ -86,14 +86,14 @@ public class SecurityConfig {
 
                         .requestMatchers(
                                 HttpMethod.PATCH,
-                                "/api/v1/inventory/product/*/stock"
-                        ).hasAnyRole("ADMIN", "SELLER")
+                                "/api/v1/inventory/product/*/reserve",
+                                "/api/v1/inventory/product/*/release"
+                        ).denyAll()
 
                         .requestMatchers(
                                 HttpMethod.PATCH,
-                                "/api/v1/inventory/product/*/reserve",
-                                "/api/v1/inventory/product/*/release"
-                        ).hasRole("ADMIN")
+                                "/api/v1/inventory/product/*/stock"
+                        ).hasAnyRole("ADMIN", "SELLER")
 
                         .anyRequest().authenticated()
                 )
