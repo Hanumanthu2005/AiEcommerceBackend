@@ -74,6 +74,27 @@ public class SecurityConfig {
                                 "/api/v1/categories"
                         ).hasAnyRole("ADMIN", "SELLER")
 
+                        .requestMatchers(
+                                HttpMethod.POST,
+                                "/api/v1/inventory"
+                        ).hasAnyRole("ADMIN", "SELLER")
+
+                        .requestMatchers(
+                                HttpMethod.GET,
+                                "/api/v1/inventory/product/**"
+                        ).hasAnyRole("ADMIN", "SELLER")
+
+                        .requestMatchers(
+                                HttpMethod.PATCH,
+                                "/api/v1/inventory/product/*/stock"
+                        ).hasAnyRole("ADMIN", "SELLER")
+
+                        .requestMatchers(
+                                HttpMethod.PATCH,
+                                "/api/v1/inventory/product/*/reserve",
+                                "/api/v1/inventory/product/*/release"
+                        ).hasRole("ADMIN")
+
                         .anyRequest().authenticated()
                 )
 
