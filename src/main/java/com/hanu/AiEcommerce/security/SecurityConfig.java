@@ -95,6 +95,9 @@ public class SecurityConfig {
                                 "/api/v1/inventory/product/*/stock"
                         ).hasAnyRole("ADMIN", "SELLER")
 
+                        .requestMatchers("/api/v1/orders", "/api/v1/orders/**")
+                        .hasRole("CUSTOMER")
+
                         .anyRequest().authenticated()
                 )
 
