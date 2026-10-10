@@ -1,0 +1,1798 @@
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+Maven home: /Users/hanumanthuraovaddi/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f
+Java version: 24.0.1, vendor: Oracle Corporation, runtime: /Users/hanumanthuraovaddi/.sdkman/candidates/java/24.0.1-open
+Default locale: en_IN, platform encoding: UTF-8
+OS name: "mac os x", version: "26.6.2", arch: "aarch64", family: "mac"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.util < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Created adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gaecv, file-gav, file-hgaecv, file-hgav, file-static, gaecv, gav, static]
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /Users/hanumanthuraovaddi/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/conf/settings.xml
+[DEBUG] Reading user settings from /Users/hanumanthuraovaddi/.m2/settings.xml
+[DEBUG] Reading global toolchains from /Users/hanumanthuraovaddi/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /Users/hanumanthuraovaddi/.m2/toolchains.xml
+[DEBUG] Using local repository at /Users/hanumanthuraovaddi/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/hanumanthuraovaddi/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Creating adapter using nameMapper 'gaecv' and factory 'rwlock-local'
+[DEBUG] Extension realms for project com.hanu:aiecommerce:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-starter-parent:pom:4.1.1: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-dependencies:pom:4.1.1: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.hanu:aiecommerce:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-validation:jar -> duplicate declaration of version (?) @ line 106, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.hanu:aiecommerce:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [clean, compile]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ------------------------< com.hanu:aiecommerce >------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.hanu:aiecommerce:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:3.5.0:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${maven.clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <fast default-value="false">${maven.clean.fast}</fast>
+  <fastDir>${maven.clean.fastDir}</fastDir>
+  <fastMode default-value="background">${maven.clean.fastMode}</fastMode>
+  <followSymLinks default-value="false">${maven.clean.followSymLinks}</followSymLinks>
+  <force default-value="false">${maven.clean.force}</force>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.build.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${maven.clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.5.0:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPaths>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.46</version>
+    </path>
+  </annotationProcessorPaths>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <moduleVersion default-value="${project.version}">${maven.compiler.moduleVersion}</moduleVersion>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}">${maven.compiler.outputDirectory}</outputDirectory>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">true</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <useModuleVersion default-value="true">${maven.compiler.useModuleVersion}</useModuleVersion>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-snapshots (http://oss.sonatype.org/content/repositories/vaadin-snapshots/).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-releases (http://oss.sonatype.org/content/repositories/vaadin-releases/).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=675667, ConflictMarker.markTime=234458, ConflictMarker.nodeCount=312, ConflictIdSorter.graphTime=468292, ConflictIdSorter.topsortTime=178708, ConflictIdSorter.conflictIdCount=143, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9620792, ConflictResolver.conflictItemCount=308, DfDependencyCollector.collectTime=236764459, DfDependencyCollector.transformTime=12018541}
+[DEBUG] com.hanu:aiecommerce:jar:0.0.1-SNAPSHOT
+[DEBUG]    org.springframework.boot:spring-boot-starter-data-jpa:jar:4.1.1:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-starter-logging:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]             ch.qos.logback:logback-classic:jar:1.5.38:compile (version managed from 1.5.38)
+[DEBUG]                ch.qos.logback:logback-core:jar:1.5.38:compile (version managed from 1.5.38)
+[DEBUG]             org.apache.logging.log4j:log4j-to-slf4j:jar:2.25.5:compile (version managed from 2.25.5)
+[DEBUG]                org.apache.logging.log4j:log4j-api:jar:2.25.5:compile (version managed from 2.25.5)
+[DEBUG]             org.slf4j:jul-to-slf4j:jar:2.0.18:compile (version managed from 2.0.18)
+[DEBUG]          jakarta.annotation:jakarta.annotation-api:jar:3.0.0:compile (version managed from 3.0.0)
+[DEBUG]          org.yaml:snakeyaml:jar:2.6:compile (version managed from 2.6)
+[DEBUG]       org.springframework.boot:spring-boot-starter-jdbc:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          com.zaxxer:HikariCP:jar:7.0.2:compile (version managed from 7.0.2)
+[DEBUG]       org.springframework.boot:spring-boot-data-jpa:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-data-commons:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]             org.springframework.boot:spring-boot-persistence:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]             org.springframework.data:spring-data-commons:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-hibernate:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]             org.springframework.boot:spring-boot-jpa:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]                jakarta.persistence:jakarta.persistence-api:jar:3.2.0:compile (version managed from 3.2.0)
+[DEBUG]             org.hibernate.orm:hibernate-core:jar:7.4.5.Final:compile (version managed from 7.4.5.Final)
+[DEBUG]                jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile (version managed from 2.0.1)
+[DEBUG]                org.hibernate.models:hibernate-models:jar:1.1.1:runtime
+[DEBUG]                org.glassfish.jaxb:jaxb-runtime:jar:4.0.9:runtime (version managed from 4.0.7)
+[DEBUG]                   org.glassfish.jaxb:jaxb-core:jar:4.0.9:runtime (version managed from 4.0.9)
+[DEBUG]                      org.eclipse.angus:angus-activation:jar:2.0.3:runtime
+[DEBUG]                      org.glassfish.jaxb:txw2:jar:4.0.9:runtime (version managed from 4.0.9)
+[DEBUG]                      com.sun.istack:istack-commons-runtime:jar:4.1.2:runtime
+[DEBUG]                jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime (version managed from 2.0.1)
+[DEBUG]             org.springframework:spring-orm:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]          org.springframework.data:spring-data-jpa:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]             org.antlr:antlr4-runtime:jar:4.13.2:compile
+[DEBUG]          org.springframework:spring-aspects:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]             org.aspectj:aspectjweaver:jar:1.9.25.1:compile (version managed from 1.9.25)
+[DEBUG]       org.springframework.boot:spring-boot-jdbc:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-sql:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-transaction:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework:spring-jdbc:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]    org.springframework.boot:spring-boot-starter-validation:jar:4.1.1:compile
+[DEBUG]       org.springframework.boot:spring-boot-validation:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-el:jar:11.0.24:compile (version managed from 11.0.24)
+[DEBUG]          org.hibernate.validator:hibernate-validator:jar:9.1.3.Final:compile (version managed from 9.1.3.Final)
+[DEBUG]             jakarta.validation:jakarta.validation-api:jar:3.1.1:compile (version managed from 3.1.1)
+[DEBUG]             org.jboss.logging:jboss-logging:jar:3.6.3.Final:compile (version managed from 3.6.3.Final)
+[DEBUG]             com.fasterxml:classmate:jar:1.7.3:compile (version managed from 1.7.1)
+[DEBUG]    org.springframework.boot:spring-boot-starter-webmvc:jar:4.1.1:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-jackson:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]       org.springframework.boot:spring-boot-starter-tomcat:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-starter-tomcat-runtime:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]             org.apache.tomcat.embed:tomcat-embed-core:jar:11.0.24:compile (version managed from 11.0.24)
+[DEBUG]             org.apache.tomcat.embed:tomcat-embed-websocket:jar:11.0.24:compile (version managed from 11.0.24)
+[DEBUG]          org.springframework.boot:spring-boot-tomcat:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]       org.springframework.boot:spring-boot-http-converter:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework:spring-web:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]       org.springframework.boot:spring-boot-webmvc:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-servlet:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework:spring-webmvc:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]    org.springframework.boot:spring-boot-devtools:jar:4.1.1:runtime (optional)
+[DEBUG]       org.springframework.boot:spring-boot:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework:spring-core:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]             commons-logging:commons-logging:jar:1.3.6:compile (version managed from 1.3.5)
+[DEBUG]       org.springframework.boot:spring-boot-autoconfigure:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]    org.postgresql:postgresql:jar:42.7.13:runtime
+[DEBUG]       org.checkerframework:checker-qual:jar:3.55.1:runtime
+[DEBUG]    org.projectlombok:lombok:jar:1.18.46:compile (optional)
+[DEBUG]    org.springframework.boot:spring-boot-starter-data-jpa-test:jar:4.1.1:test
+[DEBUG]       org.springframework.boot:spring-boot-starter-test:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-test:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-test-autoconfigure:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]          com.jayway.jsonpath:json-path:jar:2.10.0:test (version managed from 2.10.0)
+[DEBUG]          jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.5:runtime (version managed from 4.0.5)
+[DEBUG]             jakarta.activation:jakarta.activation-api:jar:2.1.4:runtime (version managed from 2.1.4)
+[DEBUG]          net.minidev:json-smart:jar:2.6.0:test (version managed from 2.6.0)
+[DEBUG]             net.minidev:accessors-smart:jar:2.6.0:test
+[DEBUG]                org.ow2.asm:asm:jar:9.7.1:test
+[DEBUG]          org.assertj:assertj-core:jar:3.27.7:test (version managed from 3.27.7)
+[DEBUG]             net.bytebuddy:byte-buddy:jar:1.18.11:runtime (version managed from 1.18.3)
+[DEBUG]          org.awaitility:awaitility:jar:4.3.0:test (version managed from 4.3.0)
+[DEBUG]          org.hamcrest:hamcrest:jar:3.0:test (version managed from 3.0)
+[DEBUG]          org.junit.jupiter:junit-jupiter:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]             org.junit.jupiter:junit-jupiter-api:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]                org.opentest4j:opentest4j:jar:1.3.0:test
+[DEBUG]                org.junit.platform:junit-platform-commons:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]                org.apiguardian:apiguardian-api:jar:1.1.2:test
+[DEBUG]             org.junit.jupiter:junit-jupiter-params:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]             org.junit.jupiter:junit-jupiter-engine:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]                org.junit.platform:junit-platform-engine:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]          org.mockito:mockito-core:jar:5.23.0:test (version managed from 5.23.0)
+[DEBUG]             net.bytebuddy:byte-buddy-agent:jar:1.18.11:test (version managed from 1.17.7)
+[DEBUG]             org.objenesis:objenesis:jar:3.3:test
+[DEBUG]          org.mockito:mockito-junit-jupiter:jar:5.23.0:test (version managed from 5.23.0)
+[DEBUG]          org.skyscreamer:jsonassert:jar:1.5.3:test (version managed from 1.5.3)
+[DEBUG]             com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[DEBUG]          org.springframework:spring-test:jar:7.0.9:test (version managed from 7.0.9)
+[DEBUG]          org.xmlunit:xmlunit-core:jar:2.11.0:test (version managed from 2.11.0)
+[DEBUG]       org.springframework.boot:spring-boot-starter-jdbc-test:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-jdbc-test:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]       org.springframework.boot:spring-boot-data-jpa-test:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-jpa-test:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]    org.springframework.boot:spring-boot-starter-validation-test:jar:4.1.1:test
+[DEBUG]    org.springframework.boot:spring-boot-starter-webmvc-test:jar:4.1.1:test
+[DEBUG]       org.springframework.boot:spring-boot-starter-jackson-test:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]       org.springframework.boot:spring-boot-webmvc-test:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]          org.springframework.boot:spring-boot-web-server:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]       org.springframework.boot:spring-boot-resttestclient:jar:4.1.1:test (version managed from 4.1.1)
+[DEBUG]    org.springframework.kafka:spring-kafka:jar:4.1.1:compile
+[DEBUG]       org.springframework:spring-context:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]          org.springframework:spring-beans:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]          org.springframework:spring-expression:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]       org.springframework:spring-messaging:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]       org.springframework:spring-tx:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]       org.apache.kafka:kafka-clients:jar:4.2.1:compile (version managed from 4.2.1)
+[DEBUG]          com.github.luben:zstd-jni:jar:1.5.6-10:runtime
+[DEBUG]          at.yawk.lz4:lz4-java:jar:1.10.1:runtime
+[DEBUG]          org.xerial.snappy:snappy-java:jar:1.1.10.7:runtime
+[DEBUG]          org.slf4j:slf4j-api:jar:2.0.18:compile (version managed from 1.7.36)
+[DEBUG]       io.micrometer:micrometer-observation:jar:1.17.1:compile (version managed from 1.17.1)
+[DEBUG]          org.jspecify:jspecify:jar:1.0.1:compile (version managed from 1.0.1)
+[DEBUG]          io.micrometer:micrometer-commons:jar:1.17.1:compile (version managed from 1.17.1)
+[DEBUG]    com.fasterxml.jackson.core:jackson-databind:jar:2.21.5:compile
+[DEBUG]       com.fasterxml.jackson.core:jackson-annotations:jar:2.21:compile (version managed from 2.21)
+[DEBUG]       com.fasterxml.jackson.core:jackson-core:jar:2.21.5:compile (version managed from 2.21.5)
+[DEBUG]    org.springframework.boot:spring-boot-starter-json:jar:4.1.1:compile
+[DEBUG]       org.springframework.boot:spring-boot-jackson:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          tools.jackson.core:jackson-databind:jar:3.1.5:compile (version managed from 3.1.5)
+[DEBUG]             tools.jackson.core:jackson-core:jar:3.1.5:compile (version managed from 3.1.5)
+[DEBUG]    org.springframework.boot:spring-boot-starter-security:jar:4.1.1:compile
+[DEBUG]       org.springframework.boot:spring-boot-security:jar:4.1.1:compile (version managed from 4.1.1)
+[DEBUG]          org.springframework.security:spring-security-config:jar:7.1.1:compile (version managed from 7.1.1)
+[DEBUG]             org.springframework.security:spring-security-core:jar:7.1.1:compile (version managed from 7.1.1)
+[DEBUG]                org.springframework.security:spring-security-crypto:jar:7.1.1:compile (version managed from 7.1.1)
+[DEBUG]          org.springframework.security:spring-security-web:jar:7.1.1:compile (version managed from 7.1.1)
+[DEBUG]       org.springframework:spring-aop:jar:7.0.9:compile (version managed from 7.0.9)
+[DEBUG]    io.jsonwebtoken:jjwt-api:jar:0.12.6:compile
+[DEBUG]    io.jsonwebtoken:jjwt-impl:jar:0.12.6:runtime
+[DEBUG]    io.jsonwebtoken:jjwt-jackson:jar:0.12.6:runtime
+[DEBUG]    com.razorpay:razorpay-java:jar:1.4.8:compile
+[DEBUG]       org.json:json:jar:20231013:compile
+[DEBUG]       com.squareup.okhttp3:okhttp:jar:3.10.0:compile
+[DEBUG]          com.squareup.okio:okio:jar:1.14.0:compile
+[DEBUG]       com.squareup.okhttp3:logging-interceptor:jar:3.10.0:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.21.0:compile (version managed from 1.11)
+[DEBUG]       org.apache.commons:commons-text:jar:1.3:compile
+[DEBUG]          org.apache.commons:commons-lang3:jar:3.20.0:compile (version managed from 3.7)
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ aiecommerce ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=48708, ConflictMarker.markTime=40209, ConflictMarker.nodeCount=2, ConflictIdSorter.graphTime=32666, ConflictIdSorter.topsortTime=6459, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=66792, ConflictResolver.conflictItemCount=2, DfDependencyCollector.collectTime=9180917, DfDependencyCollector.transformTime=207708}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:3.5.0
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:4.0.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.5.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.5.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.5.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:3.5.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:4.0.2
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-clean-plugin:3.5.0:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:3.5.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-clean-plugin:3.5.0:clean:default-clean' with basic configurator -->
+[DEBUG]   (f) directory = /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) fast = false
+[DEBUG]   (f) fastMode = background
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) force = false
+[DEBUG]   (f) outputDirectory = /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes
+[DEBUG]   (f) reportDirectory = /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@317a118b
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target
+[INFO] Deleting directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/generated-sources/annotations
+[INFO] Deleting directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/generated-sources
+[INFO] Deleting file /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes/application.properties
+[INFO] Deleting directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes
+[INFO] Deleting file /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Deleting file /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Deleting directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/maven-status/maven-compiler-plugin/compile/default-compile
+[INFO] Deleting directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/maven-status/maven-compiler-plugin/compile
+[INFO] Deleting directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/maven-status/maven-compiler-plugin
+[INFO] Deleting directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/maven-status
+[INFO] Deleting directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target
+[DEBUG] Skipping non-existing directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes
+[DEBUG] Skipping non-existing directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/test-classes
+[DEBUG] Skipping non-existing directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ aiecommerce ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=22292, ConflictMarker.markTime=11583, ConflictMarker.nodeCount=12, ConflictIdSorter.graphTime=22541, ConflictIdSorter.topsortTime=6875, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=89042, ConflictResolver.conflictItemCount=12, DfDependencyCollector.collectTime=22589000, DfDependencyCollector.transformTime=161084}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.5.0
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.5.0:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       org.codehaus.plexus:plexus-build-api:jar:1.2.0:compile
+[DEBUG]          javax.inject:javax.inject:jar:1:compile
+[DEBUG]          org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]          org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.9.0.M4:compile (version managed from default)
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.29:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.6.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.5.0
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.5.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-build-api:jar:1.2.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.29
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.6.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.5.0:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.5.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.5.0:resources:default-resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.hanu:aiecommerce:0.0.1-SNAPSHOT @ /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: true, FileSet {directory: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/resources, PatternSet [includes: {**/application*.yml, **/application*.yaml, **/application*.properties}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/resources, PatternSet [includes: {}, excludes: {**/application*.yml, **/application*.yaml, **/application*.properties}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@317a118b
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] activemq.version: 6.2.9
+[DEBUG] angus-mail.version: 2.0.5
+[DEBUG] apple.awt.application.name: Launcher
+[DEBUG] artemis.version: 2.53.0
+[DEBUG] aspectj.version: 1.9.25.1
+[DEBUG] assertj.version: 3.27.7
+[DEBUG] awaitility.version: 4.3.0
+[DEBUG] brave.version: 6.3.1
+[DEBUG] build-helper-maven-plugin.version: 3.6.1
+[DEBUG] byte-buddy.version: 1.18.11
+[DEBUG] cache2k.version: 2.6.1.Final
+[DEBUG] caffeine.version: 3.2.4
+[DEBUG] cassandra-driver.version: 4.19.3
+[DEBUG] classmate.version: 1.7.3
+[DEBUG] classworlds.conf: /Users/hanumanthuraovaddi/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/bin/m2.conf
+[DEBUG] commons-codec.version: 1.21.0
+[DEBUG] commons-dbcp2.version: 2.14.0
+[DEBUG] commons-lang3.version: 3.20.0
+[DEBUG] commons-logging.version: 1.3.6
+[DEBUG] commons-pool.version: 1.6
+[DEBUG] commons-pool2.version: 2.13.1
+[DEBUG] couchbase-client.version: 3.11.3
+[DEBUG] crac.version: 1.5.0
+[DEBUG] cyclonedx-maven-plugin.version: 2.9.3
+[DEBUG] db2-jdbc.version: 12.1.5.0
+[DEBUG] dependency-management-plugin.version: 1.1.7
+[DEBUG] derby.version: 10.16.1.1
+[DEBUG] ehcache3.version: 3.12.0
+[DEBUG] elasticsearch-client.version: 9.4.5
+[DEBUG] env.BASE_URL: http://172.20.64.193:8080
+[DEBUG] env.COMMAND_MODE: unix2003
+[DEBUG] env.FIG_TERM: 1
+[DEBUG] env.HOME: /Users/hanumanthuraovaddi
+[DEBUG] env.JAVA_HOME: /Users/hanumanthuraovaddi/.sdkman/candidates/java/current
+[DEBUG] env.LANG: C.UTF-8
+[DEBUG] env.LC_CTYPE: UTF-8
+[DEBUG] env.LOGNAME: hanumanthuraovaddi
+[DEBUG] env.MAVEN_CMD_LINE_ARGS:  clean compile -Dmaven.compiler.showWarnings=true -X
+[DEBUG] env.MAVEN_PROJECTBASEDIR: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend
+[DEBUG] env.OLDPWD: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend
+[DEBUG] env.OSLogRateLimit: 64
+[DEBUG] env.PATH: /opt/homebrew/opt/mysql-client/bin:/Users/hanumanthuraovaddi/.local/bin:/Users/hanumanthuraovaddi/.npm-global/bin:/Users/hanumanthuraovaddi/.antigravity-ide/antigravity-ide/bin:/Users/hanumanthuraovaddi/.antigravity/antigravity/bin:/Users/hanumanthuraovaddi/.sdkman/candidates/java/current/bin:/opt/homebrew/Cellar/openjdk@21/21.0.10/libexec/openjdk.jdk/Contents/Home/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Library/Frameworks/Python.framework/Versions/3.14/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin
+[DEBUG] env.PROCESS_LAUNCHED_BY_CW: 1
+[DEBUG] env.PROCESS_LAUNCHED_BY_Q: 1
+[DEBUG] env.PWD: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend
+[DEBUG] env.SDKMAN_CANDIDATES_API: https://api.sdkman.io/2
+[DEBUG] env.SDKMAN_CANDIDATES_DIR: /Users/hanumanthuraovaddi/.sdkman/candidates
+[DEBUG] env.SDKMAN_DIR: /Users/hanumanthuraovaddi/.sdkman
+[DEBUG] env.SDKMAN_PLATFORM: darwinarm64
+[DEBUG] env.SHELL: /bin/zsh
+[DEBUG] env.SHLVL: 1
+[DEBUG] env.SSH_AUTH_SOCK: /var/run/com.apple.launchd.18MRg8xCsg/Listeners
+[DEBUG] env.TERM: xterm-256color
+[DEBUG] env.TERMINAL_EMULATOR: JetBrains-JediTerm
+[DEBUG] env.TERM_SESSION_ID: a4325679-4f46-4a1b-af47-7692b70470ff
+[DEBUG] env.TMPDIR: /var/folders/v6/3nlb4mv94g9bd_z0fzc3v4w40000gn/T/
+[DEBUG] env.USER: hanumanthuraovaddi
+[DEBUG] env.XPC_FLAGS: 0x0
+[DEBUG] env.XPC_SERVICE_NAME: 0
+[DEBUG] env.__CFBundleIdentifier: com.jetbrains.intellij.ce
+[DEBUG] env.__CF_USER_TEXT_ENCODING: 0x1F5:0x0:0x0
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: /
+[DEBUG] flyway.version: 12.4.0
+[DEBUG] freemarker.version: 2.3.34
+[DEBUG] ftp.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+[DEBUG] git-commit-id-maven-plugin.version: 9.2.0
+[DEBUG] glassfish-jaxb.version: 4.0.9
+[DEBUG] glassfish-jstl.version: 3.0.1
+[DEBUG] graphql-java.version: 25.0
+[DEBUG] groovy.version: 5.0.8
+[DEBUG] grpc-java.version: 1.83.1
+[DEBUG] grpc-kotlin.version: 1.5.0
+[DEBUG] gson.version: 2.13.2
+[DEBUG] h2.version: 2.4.240
+[DEBUG] hamcrest.version: 3.0
+[DEBUG] hazelcast.version: 5.5.0
+[DEBUG] hibernate-validator.version: 9.1.3.Final
+[DEBUG] hibernate.version: 7.4.5.Final
+[DEBUG] hikaricp.version: 7.0.2
+[DEBUG] hsqldb.version: 2.7.3
+[DEBUG] htmlunit.version: 4.21.0
+[DEBUG] http.nonProxyHosts: local|*.local|169.254/16|*.169.254/16
+[DEBUG] httpasyncclient.version: 4.1.5
+[DEBUG] httpclient5.version: 5.6.4
+[DEBUG] httpcore.version: 4.4.16
+[DEBUG] httpcore5.version: 5.4.3
+[DEBUG] infinispan.version: 16.1.4
+[DEBUG] influxdb-java.version: 2.25
+[DEBUG] jackson-2-bom.version: 2.21.5
+[DEBUG] jackson-bom.version: 3.1.5
+[DEBUG] jakarta-activation.version: 2.1.4
+[DEBUG] jakarta-annotation.version: 3.0.0
+[DEBUG] jakarta-inject.version: 2.0.1
+[DEBUG] jakarta-jms.version: 3.1.0
+[DEBUG] jakarta-json-bind.version: 3.0.2
+[DEBUG] jakarta-json.version: 2.1.3
+[DEBUG] jakarta-mail.version: 2.1.5
+[DEBUG] jakarta-management.version: 1.1.4
+[DEBUG] jakarta-persistence.version: 3.2.0
+[DEBUG] jakarta-servlet-jsp-jstl.version: 3.0.2
+[DEBUG] jakarta-servlet.version: 6.1.0
+[DEBUG] jakarta-transaction.version: 2.0.1
+[DEBUG] jakarta-validation.version: 3.1.1
+[DEBUG] jakarta-websocket.version: 2.2.0
+[DEBUG] jakarta-ws-rs.version: 4.0.0
+[DEBUG] jakarta-xml-bind.version: 4.0.5
+[DEBUG] jakarta-xml-soap.version: 3.0.2
+[DEBUG] jakarta-xml-ws.version: 4.0.3
+[DEBUG] janino.version: 3.1.12
+[DEBUG] java.class.path: /Users/hanumanthuraovaddi/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/boot/plexus-classworlds-2.11.0.jar
+[DEBUG] java.class.version: 68.0
+[DEBUG] java.home: /Users/hanumanthuraovaddi/.sdkman/candidates/java/24.0.1-open
+[DEBUG] java.io.tmpdir: /var/folders/v6/3nlb4mv94g9bd_z0fzc3v4w40000gn/T/
+[DEBUG] java.library.path: /Users/hanumanthuraovaddi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+[DEBUG] java.runtime.name: OpenJDK Runtime Environment
+[DEBUG] java.runtime.version: 24.0.1+9-30
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 24
+[DEBUG] java.vendor: Oracle Corporation
+[DEBUG] java.vendor.url: https://java.oracle.com/
+[DEBUG] java.vendor.url.bug: https://bugreport.java.com/bugreport/
+[DEBUG] java.version: 24.0.1
+[DEBUG] java.version.date: 2025-04-15
+[DEBUG] java.vm.compressedOopsMode: Zero based
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: OpenJDK 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 24
+[DEBUG] java.vm.vendor: Oracle Corporation
+[DEBUG] java.vm.version: 24.0.1+9-30
+[DEBUG] javax-cache.version: 1.1.1
+[DEBUG] javax-money.version: 1.1
+[DEBUG] jaxen.version: 2.0.6
+[DEBUG] jaybird.version: 6.0.5
+[DEBUG] jboss-logging.version: 3.6.3.Final
+[DEBUG] jdk.debug: release
+[DEBUG] jdom2.version: 2.0.6.1
+[DEBUG] jedis.version: 7.4.1
+[DEBUG] jersey.version: 4.0.2
+[DEBUG] jetty-reactive-httpclient.version: 4.1.5
+[DEBUG] jetty.version: 12.1.12
+[DEBUG] jmustache.version: 1.16
+[DEBUG] jooq.version: 3.21.7
+[DEBUG] json-path.version: 2.10.0
+[DEBUG] json-smart.version: 2.6.0
+[DEBUG] jsonassert.version: 1.5.3
+[DEBUG] jspecify.version: 1.0.1
+[DEBUG] jtds.version: 1.3.1
+[DEBUG] junit-jupiter.version: 6.0.3
+[DEBUG] junit.version: 4.13.2
+[DEBUG] kafka.version: 4.2.1
+[DEBUG] kotlin-coroutines.version: 1.10.2
+[DEBUG] kotlin-serialization.version: 1.11.0
+[DEBUG] kotlin.version: 2.3.21
+[DEBUG] lettuce.version: 7.5.2.RELEASE
+[DEBUG] library.jansi.path: /Users/hanumanthuraovaddi/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/lib/jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] liquibase.version: 5.0.3
+[DEBUG] log4j2.version: 2.25.5
+[DEBUG] logback.version: 1.5.38
+[DEBUG] lombok.version: 1.18.46
+[DEBUG] mariadb.version: 3.5.10
+[DEBUG] maven-antrun-plugin.version: 3.2.0
+[DEBUG] maven-assembly-plugin.version: 3.8.0
+[DEBUG] maven-clean-plugin.version: 3.5.0
+[DEBUG] maven-compiler-plugin.version: 3.15.0
+[DEBUG] maven-dependency-plugin.version: 3.10.0
+[DEBUG] maven-deploy-plugin.version: 3.1.4
+[DEBUG] maven-enforcer-plugin.version: 3.6.3
+[DEBUG] maven-failsafe-plugin.version: 3.5.6
+[DEBUG] maven-help-plugin.version: 3.5.2
+[DEBUG] maven-install-plugin.version: 3.1.4
+[DEBUG] maven-invoker-plugin.version: 3.9.1
+[DEBUG] maven-jar-plugin.version: 3.5.1
+[DEBUG] maven-javadoc-plugin.version: 3.12.0
+[DEBUG] maven-resources-plugin.version: 3.5.0
+[DEBUG] maven-shade-plugin.version: 3.6.2
+[DEBUG] maven-source-plugin.version: 3.4.0
+[DEBUG] maven-surefire-plugin.version: 3.5.6
+[DEBUG] maven-war-plugin.version: 3.5.1
+[DEBUG] maven.build.timestamp: 2026-10-10T09:16:30Z
+[DEBUG] maven.build.version: Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+[DEBUG] maven.compiler.release: 21
+[DEBUG] maven.compiler.showWarnings: true
+[DEBUG] maven.conf: /Users/hanumanthuraovaddi/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/conf
+[DEBUG] maven.home: /Users/hanumanthuraovaddi/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f
+[DEBUG] maven.multiModuleProjectDirectory: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend
+[DEBUG] maven.version: 3.9.16
+[DEBUG] micrometer-tracing.version: 1.7.1
+[DEBUG] micrometer.version: 1.17.1
+[DEBUG] mockito.version: 5.23.0
+[DEBUG] mongodb.version: 5.8.1
+[DEBUG] mssql-jdbc.version: 13.4.0.jre11
+[DEBUG] mysql.version: 9.7.0
+[DEBUG] native-build-tools-plugin.version: 1.1.8
+[DEBUG] native.encoding: UTF-8
+[DEBUG] nekohtml.version: 1.9.22
+[DEBUG] neo4j-java-driver.version: 6.1.0
+[DEBUG] netty.version: 4.2.17.Final
+[DEBUG] opentelemetry.version: 1.62.0
+[DEBUG] oracle-database.version: 23.26.3.0.0
+[DEBUG] oracle-r2dbc.version: 1.3.0
+[DEBUG] os.arch: aarch64
+[DEBUG] os.name: Mac OS X
+[DEBUG] os.version: 26.6.2
+[DEBUG] path.separator: :
+[DEBUG] pooled-jms.version: 3.2.3
+[DEBUG] postgresql.version: 42.7.13
+[DEBUG] project.baseUri: file:/Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] project.reporting.outputEncoding: UTF-8
+[DEBUG] prometheus-client.version: 1.7.0
+[DEBUG] prometheus-simpleclient.version: 0.16.0
+[DEBUG] protobuf-java.version: 4.35.1
+[DEBUG] protobuf-maven-plugin.version: 5.1.8
+[DEBUG] pulsar.version: 4.2.4
+[DEBUG] qpid-protonj2.version: 1.1.0
+[DEBUG] quartz.version: 2.5.2
+[DEBUG] querydsl.version: 5.1.0
+[DEBUG] r2dbc-h2.version: 1.1.0.RELEASE
+[DEBUG] r2dbc-mariadb.version: 1.4.1
+[DEBUG] r2dbc-mssql.version: 1.0.5.RELEASE
+[DEBUG] r2dbc-mysql.version: 1.4.3
+[DEBUG] r2dbc-pool.version: 1.0.2.RELEASE
+[DEBUG] r2dbc-postgresql.version: 1.1.2.RELEASE
+[DEBUG] r2dbc-proxy.version: 1.1.6.RELEASE
+[DEBUG] r2dbc-spi.version: 1.0.0.RELEASE
+[DEBUG] rabbit-amqp-client.version: 5.30.0
+[DEBUG] rabbit-stream-client.version: 1.6.0
+[DEBUG] reactive-streams.version: 1.0.4
+[DEBUG] reactor-bom.version: 2025.0.7
+[DEBUG] resource.delimiter: @
+[DEBUG] rsocket.version: 1.1.5
+[DEBUG] rxjava3.version: 3.1.12
+[DEBUG] saaj-impl.version: 3.0.6
+[DEBUG] selenium-htmlunit.version: 4.43.0
+[DEBUG] selenium.version: 4.43.0
+[DEBUG] sendgrid.version: 4.10.3
+[DEBUG] slf4j.version: 2.0.18
+[DEBUG] snakeyaml.version: 2.6
+[DEBUG] socksNonProxyHosts: local|*.local|169.254/16|*.169.254/16
+[DEBUG] spring-amqp.version: 4.1.1
+[DEBUG] spring-batch.version: 6.0.5
+[DEBUG] spring-boot.run.main-class: ${start-class}
+[DEBUG] spring-data-bom.version: 2026.0.1
+[DEBUG] spring-framework.version: 7.0.9
+[DEBUG] spring-graphql.version: 2.0.5
+[DEBUG] spring-grpc.version: 1.1.1
+[DEBUG] spring-hateoas.version: 3.1.2
+[DEBUG] spring-integration.version: 7.1.1
+[DEBUG] spring-kafka.version: 4.1.1
+[DEBUG] spring-ldap.version: 4.1.1
+[DEBUG] spring-pulsar.version: 2.0.7
+[DEBUG] spring-restdocs.version: 4.0.1
+[DEBUG] spring-security.version: 7.1.1
+[DEBUG] spring-session.version: 4.1.1
+[DEBUG] spring-ws.version: 5.0.2
+[DEBUG] sqlite-jdbc.version: 3.53.2.1
+[DEBUG] stderr.encoding: UTF-8
+[DEBUG] stdout.encoding: UTF-8
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: /Users/hanumanthuraovaddi/.sdkman/candidates/java/24.0.1-open/lib
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.io.unicode.encoding: UnicodeBig
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher clean compile -Dmaven.compiler.showWarnings=true -X
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: UTF-8
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] testcontainers-redis-module.version: 2.2.4
+[DEBUG] testcontainers.version: 2.0.5
+[DEBUG] thymeleaf-extras-data-attribute.version: 2.0.1
+[DEBUG] thymeleaf-extras-springsecurity.version: 3.1.5.RELEASE
+[DEBUG] thymeleaf-layout-dialect.version: 4.0.1
+[DEBUG] thymeleaf.version: 3.1.5.RELEASE
+[DEBUG] tomcat.version: 11.0.24
+[DEBUG] unboundid-ldapsdk.version: 7.0.5
+[DEBUG] user.country: IN
+[DEBUG] user.dir: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend
+[DEBUG] user.home: /Users/hanumanthuraovaddi
+[DEBUG] user.language: en
+[DEBUG] user.name: hanumanthuraovaddi
+[DEBUG] versions-maven-plugin.version: 2.21.0
+[DEBUG] vibur.version: 26.0
+[DEBUG] webjars-locator-core.version: 0.59
+[DEBUG] webjars-locator-lite.version: 1.1.4
+[DEBUG] wsdl4j.version: 1.6.3
+[DEBUG] xml-maven-plugin.version: 1.2.1
+[DEBUG] xmlunit2.version: 2.11.0
+[DEBUG] yasson.version: 3.0.5
+[DEBUG] zipkin-reporter.version: 3.5.3
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/resources
+excludes []
+includes [**/application*.yml, **/application*.yaml, **/application*.properties]
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[DEBUG] Copying file application.properties
+[DEBUG] file application.properties has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'application.properties'.
+[DEBUG] filtering /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/resources/application.properties to /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes/application.properties
+[DEBUG] resource with targetPath null
+directory /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/resources
+excludes [**/application*.yml, **/application*.yaml, **/application*.properties]
+includes []
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ aiecommerce ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=22875, ConflictMarker.markTime=15334, ConflictMarker.nodeCount=23, ConflictIdSorter.graphTime=6458, ConflictIdSorter.topsortTime=9125, ConflictIdSorter.conflictIdCount=14, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=93583, ConflictResolver.conflictItemCount=23, DfDependencyCollector.collectTime=29820208, DfDependencyCollector.transformTime=157375}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.15.0
+[DEBUG]    org.ow2.asm:asm:jar:9.9.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.4.2:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       commons-io:commons-io:jar:2.11.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:1.5.2:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.2.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.16.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.16.2:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]       org.codehaus.plexus:plexus-xml:jar:3.0.1:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.16.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:4.0.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.15.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.15.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.15.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.15.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.9.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.4.2
+[DEBUG]   Included: commons-io:commons-io:jar:2.11.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.5.2
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.2.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.16.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.16.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-xml:jar:3.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.16.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:4.0.2
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.15.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile:default-compile' with basic configurator -->
+[DEBUG]   (s) groupId = org.projectlombok
+[DEBUG]   (s) artifactId = lombok
+[DEBUG]   (s) version = 1.18.46
+[DEBUG]   (f) annotationProcessorPaths = [org.projectlombok:lombok:1.18.46.jar]
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend
+[DEBUG]   (f) buildDirectory = /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target
+[DEBUG]   (f) compilePath = [/Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/4.1.1/spring-boot-starter-data-jpa-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.1/spring-boot-starter-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.1/spring-boot-starter-logging-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/ch/qos/logback/logback-classic/1.5.38/logback-classic-1.5.38.jar, /Users/hanumanthuraovaddi/.m2/repository/ch/qos/logback/logback-core/1.5.38/logback-core-1.5.38.jar, /Users/hanumanthuraovaddi/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.5/log4j-to-slf4j-2.25.5.jar, /Users/hanumanthuraovaddi/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.5/log4j-api-2.25.5.jar, /Users/hanumanthuraovaddi/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar, /Users/hanumanthuraovaddi/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar, /Users/hanumanthuraovaddi/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.1/spring-boot-starter-jdbc-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.1/spring-boot-data-jpa-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.1/spring-boot-data-commons-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.1/spring-boot-persistence-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/data/spring-data-commons/4.1.1/spring-data-commons-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.1/spring-boot-hibernate-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.1/spring-boot-jpa-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar, /Users/hanumanthuraovaddi/.m2/repository/org/hibernate/orm/hibernate-core/7.4.5.Final/hibernate-core-7.4.5.Final.jar, /Users/hanumanthuraovaddi/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-orm/7.0.9/spring-orm-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/data/spring-data-jpa/4.1.1/spring-data-jpa-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-aspects/7.0.9/spring-aspects-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.1/spring-boot-jdbc-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.1/spring-boot-sql-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.1/spring-boot-transaction-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-jdbc/7.0.9/spring-jdbc-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-validation/4.1.1/spring-boot-starter-validation-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-validation/4.1.1/spring-boot-validation-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.24/tomcat-embed-el-11.0.24.jar, /Users/hanumanthuraovaddi/.m2/repository/org/hibernate/validator/hibernate-validator/9.1.3.Final/hibernate-validator-9.1.3.Final.jar, /Users/hanumanthuraovaddi/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar, /Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.1.1/spring-boot-starter-webmvc-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.1.1/spring-boot-starter-jackson-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.1.1/spring-boot-starter-tomcat-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.1.1/spring-boot-starter-tomcat-runtime-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.24/tomcat-embed-core-11.0.24.jar, /Users/hanumanthuraovaddi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.24/tomcat-embed-websocket-11.0.24.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.1/spring-boot-tomcat-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.1/spring-boot-http-converter-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-web/7.0.9/spring-web-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.1/spring-boot-webmvc-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.1/spring-boot-servlet-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-webmvc/7.0.9/spring-webmvc-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot/4.1.1/spring-boot-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-core/7.0.9/spring-core-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.1/spring-boot-autoconfigure-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.1/spring-boot-web-server-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/kafka/spring-kafka/4.1.1/spring-kafka-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-context/7.0.9/spring-context-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-beans/7.0.9/spring-beans-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-expression/7.0.9/spring-expression-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-messaging/7.0.9/spring-messaging-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-tx/7.0.9/spring-tx-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/org/apache/kafka/kafka-clients/4.2.1/kafka-clients-4.2.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar, /Users/hanumanthuraovaddi/.m2/repository/io/micrometer/micrometer-observation/1.17.1/micrometer-observation-1.17.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar, /Users/hanumanthuraovaddi/.m2/repository/io/micrometer/micrometer-commons/1.17.1/micrometer-commons-1.17.1.jar, /Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.5/jackson-databind-2.21.5.jar, /Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar, /Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.5/jackson-core-2.21.5.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-json/4.1.1/spring-boot-starter-json-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.1/spring-boot-jackson-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/tools/jackson/core/jackson-databind/3.1.5/jackson-databind-3.1.5.jar, /Users/hanumanthuraovaddi/.m2/repository/tools/jackson/core/jackson-core/3.1.5/jackson-core-3.1.5.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-security/4.1.1/spring-boot-starter-security-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-security/4.1.1/spring-boot-security-4.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-config/7.1.1/spring-security-config-7.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-core/7.1.1/spring-security-core-7.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-crypto/7.1.1/spring-security-crypto-7.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-web/7.1.1/spring-security-web-7.1.1.jar, /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-aop/7.0.9/spring-aop-7.0.9.jar, /Users/hanumanthuraovaddi/.m2/repository/io/jsonwebtoken/jjwt-api/0.12.6/jjwt-api-0.12.6.jar, /Users/hanumanthuraovaddi/.m2/repository/com/razorpay/razorpay-java/1.4.8/razorpay-java-1.4.8.jar, /Users/hanumanthuraovaddi/.m2/repository/org/json/json/20231013/json-20231013.jar, /Users/hanumanthuraovaddi/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar, /Users/hanumanthuraovaddi/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar, /Users/hanumanthuraovaddi/.m2/repository/com/squareup/okhttp3/logging-interceptor/3.10.0/logging-interceptor-3.10.0.jar, /Users/hanumanthuraovaddi/.m2/repository/commons-codec/commons-codec/1.21.0/commons-codec-1.21.0.jar, /Users/hanumanthuraovaddi/.m2/repository/org/apache/commons/commons-text/1.3/commons-text-1.3.jar, /Users/hanumanthuraovaddi/.m2/repository/org/apache/commons/commons-lang3/3.20.0/commons-lang3-3.20.0.jar]
+[DEBUG]   (f) compileSourceRoots = [/Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/generated-sources/annotations
+[DEBUG]   (f) moduleVersion = 0.0.1-SNAPSHOT
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.hanu:aiecommerce:0.0.1-SNAPSHOT @ /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/pom.xml
+[DEBUG]   (f) projectArtifact = com.hanu:aiecommerce:jar:0.0.1-SNAPSHOT
+[DEBUG]   (s) release = 21
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@317a118b
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) useModuleVersion = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=7167, ConflictMarker.markTime=9916, ConflictMarker.nodeCount=2, ConflictIdSorter.graphTime=1584, ConflictIdSorter.topsortTime=3458, ConflictIdSorter.conflictIdCount=1, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=37917, ConflictResolver.conflictItemCount=1, DfDependencyCollector.collectTime=918500, DfDependencyCollector.transformTime=69584}
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/controller/PaymentController.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/CreateProductRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/ProductResponse.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InvalidStockAdjustmentException.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/event/ProcessedEvent.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/GlobalExceptionHandler.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/ReserveStockRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/AiEcommerceApplication.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/KafkaProducerConfig.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/entity/OrderItem.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/security/JwtService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/controller/InventoryController.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/repository/UserRepository.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/dto/PaymentStatusUpdateRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/security/SecurityConfig.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/entity/Inventory.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/repository/OrderRepository.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InvalidPaymentStateException.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/dto/UserResponse.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/event/ProcessedEventRepository.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/event/PaymentEvent.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventRepository.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/dto/OrderResponse.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/controller/ProductController.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/kafka/PaymentEventConsumer.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/JacksonConfig.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/repository/PaymentRepository.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/entity/Role.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/service/UserService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/entity/Payment.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/dto/OrderItemResponse.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/ResourceNotFoundException.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/ReleaseStockRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/dto/CreateOrderRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/CreateCategoryRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/dto/LoginResponse.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/dto/LoginRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/entity/User.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/repository/InventoryRepository.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/entity/Product.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/security/JwtAuthenticationFilter.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/controller/HealthController.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/service/ProductService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/repository/ProductRepository.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthController.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxClaimService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InvalidStockReleaseException.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/specification/ProductSpecification.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/InventoryResponse.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/CategoryResponse.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InvalidOrderStateException.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/dto/PaymentRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/KafkaDltConfig.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEvent.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/controller/CategoryController.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/KafkaErrorHandlerConfig.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/entity/Category.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/enums/PaymentStatus.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/repository/CategoryRepository.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/KafkaConsumerConfig.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/DuplicateResourceException.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/enums/OrderStatus.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/dto/CreateOrderItemRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/dto/PaymentResponse.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/ProductFilterRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/controller/OrderController.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/entity/Order.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/service/CategoryService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/config/RazorpayConfig.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/controller/UserController.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/ErrorResponse.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InsufficientStockException.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/AdjustStockRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/dto/CreateUserRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/CreateInventoryRequest.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/repository/OrderItemRepository.java
+[INFO] 	Stale source detected: /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxStatus.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/AiEcommerceApplication.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthController.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/JacksonConfig.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/KafkaConsumerConfig.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/KafkaDltConfig.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/KafkaErrorHandlerConfig.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/config/KafkaProducerConfig.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/event/PaymentEvent.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/event/ProcessedEvent.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/event/ProcessedEventRepository.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/DuplicateResourceException.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/ErrorResponse.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/GlobalExceptionHandler.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InsufficientStockException.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InvalidOrderStateException.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InvalidPaymentStateException.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InvalidStockAdjustmentException.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/InvalidStockReleaseException.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/exception/ResourceNotFoundException.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/kafka/PaymentEventConsumer.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxClaimService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEvent.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventRepository.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxStatus.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/controller/HealthController.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/controller/InventoryController.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/AdjustStockRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/CreateInventoryRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/InventoryResponse.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/ReleaseStockRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/dto/ReserveStockRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/entity/Inventory.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/repository/InventoryRepository.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/controller/OrderController.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/dto/CreateOrderItemRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/dto/CreateOrderRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/dto/OrderItemResponse.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/dto/OrderResponse.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/entity/Order.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/entity/OrderItem.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/enums/OrderStatus.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/repository/OrderItemRepository.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/repository/OrderRepository.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/config/RazorpayConfig.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/controller/PaymentController.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/dto/PaymentRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/dto/PaymentResponse.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/dto/PaymentStatusUpdateRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/entity/Payment.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/enums/PaymentStatus.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/repository/PaymentRepository.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/controller/CategoryController.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/controller/ProductController.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/CategoryResponse.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/CreateCategoryRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/CreateProductRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/ProductFilterRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/dto/ProductResponse.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/entity/Category.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/entity/Product.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/repository/CategoryRepository.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/repository/ProductRepository.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/service/CategoryService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/service/ProductService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/product/specification/ProductSpecification.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/security/JwtAuthenticationFilter.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/security/JwtService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/security/SecurityConfig.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/service/UserService.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/controller/UserController.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/dto/CreateUserRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/dto/LoginRequest.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/dto/LoginResponse.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/dto/UserResponse.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/entity/Role.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/entity/User.java
+[INFO] 	Input tree files (+): /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/user/repository/UserRepository.java
+[INFO] Recompiling the module because of changed source code.
+[DEBUG] Classpath:
+[DEBUG]  /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/4.1.1/spring-boot-starter-data-jpa-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.1/spring-boot-starter-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.1/spring-boot-starter-logging-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/ch/qos/logback/logback-classic/1.5.38/logback-classic-1.5.38.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/ch/qos/logback/logback-core/1.5.38/logback-core-1.5.38.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.5/log4j-to-slf4j-2.25.5.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.5/log4j-api-2.25.5.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.1/spring-boot-starter-jdbc-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.1/spring-boot-data-jpa-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.1/spring-boot-data-commons-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.1/spring-boot-persistence-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/data/spring-data-commons/4.1.1/spring-data-commons-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.1/spring-boot-hibernate-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.1/spring-boot-jpa-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/hibernate/orm/hibernate-core/7.4.5.Final/hibernate-core-7.4.5.Final.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-orm/7.0.9/spring-orm-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/data/spring-data-jpa/4.1.1/spring-data-jpa-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-aspects/7.0.9/spring-aspects-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.1/spring-boot-jdbc-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.1/spring-boot-sql-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.1/spring-boot-transaction-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-jdbc/7.0.9/spring-jdbc-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-validation/4.1.1/spring-boot-starter-validation-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-validation/4.1.1/spring-boot-validation-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.24/tomcat-embed-el-11.0.24.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/hibernate/validator/hibernate-validator/9.1.3.Final/hibernate-validator-9.1.3.Final.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.1.1/spring-boot-starter-webmvc-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.1.1/spring-boot-starter-jackson-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.1.1/spring-boot-starter-tomcat-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.1.1/spring-boot-starter-tomcat-runtime-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.24/tomcat-embed-core-11.0.24.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.24/tomcat-embed-websocket-11.0.24.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.1/spring-boot-tomcat-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.1/spring-boot-http-converter-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-web/7.0.9/spring-web-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.1/spring-boot-webmvc-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.1/spring-boot-servlet-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-webmvc/7.0.9/spring-webmvc-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot/4.1.1/spring-boot-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-core/7.0.9/spring-core-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.1/spring-boot-autoconfigure-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.1/spring-boot-web-server-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/kafka/spring-kafka/4.1.1/spring-kafka-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-context/7.0.9/spring-context-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-beans/7.0.9/spring-beans-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-expression/7.0.9/spring-expression-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-messaging/7.0.9/spring-messaging-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-tx/7.0.9/spring-tx-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/apache/kafka/kafka-clients/4.2.1/kafka-clients-4.2.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/io/micrometer/micrometer-observation/1.17.1/micrometer-observation-1.17.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/io/micrometer/micrometer-commons/1.17.1/micrometer-commons-1.17.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.5/jackson-databind-2.21.5.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.5/jackson-core-2.21.5.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-json/4.1.1/spring-boot-starter-json-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.1/spring-boot-jackson-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/tools/jackson/core/jackson-databind/3.1.5/jackson-databind-3.1.5.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/tools/jackson/core/jackson-core/3.1.5/jackson-core-3.1.5.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-security/4.1.1/spring-boot-starter-security-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-security/4.1.1/spring-boot-security-4.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-config/7.1.1/spring-security-config-7.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-core/7.1.1/spring-security-core-7.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-crypto/7.1.1/spring-security-crypto-7.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-web/7.1.1/spring-security-web-7.1.1.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-aop/7.0.9/spring-aop-7.0.9.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/io/jsonwebtoken/jjwt-api/0.12.6/jjwt-api-0.12.6.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/com/razorpay/razorpay-java/1.4.8/razorpay-java-1.4.8.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/json/json/20231013/json-20231013.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/com/squareup/okhttp3/logging-interceptor/3.10.0/logging-interceptor-3.10.0.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/commons-codec/commons-codec/1.21.0/commons-codec-1.21.0.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/apache/commons/commons-text/1.3/commons-text-1.3.jar
+[DEBUG]  /Users/hanumanthuraovaddi/.m2/repository/org/apache/commons/commons-lang3/3.20.0/commons-lang3-3.20.0.jar
+[DEBUG] Source roots:
+[DEBUG]  /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java
+[DEBUG] Command line options:
+[DEBUG] -d /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes -classpath /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/classes:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/4.1.1/spring-boot-starter-data-jpa-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.1/spring-boot-starter-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.1/spring-boot-starter-logging-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/ch/qos/logback/logback-classic/1.5.38/logback-classic-1.5.38.jar:/Users/hanumanthuraovaddi/.m2/repository/ch/qos/logback/logback-core/1.5.38/logback-core-1.5.38.jar:/Users/hanumanthuraovaddi/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.5/log4j-to-slf4j-2.25.5.jar:/Users/hanumanthuraovaddi/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.5/log4j-api-2.25.5.jar:/Users/hanumanthuraovaddi/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar:/Users/hanumanthuraovaddi/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/hanumanthuraovaddi/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.1/spring-boot-starter-jdbc-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.1/spring-boot-data-jpa-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.1/spring-boot-data-commons-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.1/spring-boot-persistence-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/data/spring-data-commons/4.1.1/spring-data-commons-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.1/spring-boot-hibernate-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.1/spring-boot-jpa-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar:/Users/hanumanthuraovaddi/.m2/repository/org/hibernate/orm/hibernate-core/7.4.5.Final/hibernate-core-7.4.5.Final.jar:/Users/hanumanthuraovaddi/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-orm/7.0.9/spring-orm-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/data/spring-data-jpa/4.1.1/spring-data-jpa-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-aspects/7.0.9/spring-aspects-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.1/spring-boot-jdbc-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.1/spring-boot-sql-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.1/spring-boot-transaction-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-jdbc/7.0.9/spring-jdbc-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-validation/4.1.1/spring-boot-starter-validation-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-validation/4.1.1/spring-boot-validation-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.24/tomcat-embed-el-11.0.24.jar:/Users/hanumanthuraovaddi/.m2/repository/org/hibernate/validator/hibernate-validator/9.1.3.Final/hibernate-validator-9.1.3.Final.jar:/Users/hanumanthuraovaddi/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar:/Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.1.1/spring-boot-starter-webmvc-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.1.1/spring-boot-starter-jackson-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.1.1/spring-boot-starter-tomcat-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.1.1/spring-boot-starter-tomcat-runtime-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.24/tomcat-embed-core-11.0.24.jar:/Users/hanumanthuraovaddi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.24/tomcat-embed-websocket-11.0.24.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.1/spring-boot-tomcat-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.1/spring-boot-http-converter-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-web/7.0.9/spring-web-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.1/spring-boot-webmvc-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.1/spring-boot-servlet-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-webmvc/7.0.9/spring-webmvc-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot/4.1.1/spring-boot-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-core/7.0.9/spring-core-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.1/spring-boot-autoconfigure-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.1/spring-boot-web-server-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/kafka/spring-kafka/4.1.1/spring-kafka-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-context/7.0.9/spring-context-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-beans/7.0.9/spring-beans-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-expression/7.0.9/spring-expression-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-messaging/7.0.9/spring-messaging-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-tx/7.0.9/spring-tx-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/org/apache/kafka/kafka-clients/4.2.1/kafka-clients-4.2.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar:/Users/hanumanthuraovaddi/.m2/repository/io/micrometer/micrometer-observation/1.17.1/micrometer-observation-1.17.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar:/Users/hanumanthuraovaddi/.m2/repository/io/micrometer/micrometer-commons/1.17.1/micrometer-commons-1.17.1.jar:/Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.5/jackson-databind-2.21.5.jar:/Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/Users/hanumanthuraovaddi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.5/jackson-core-2.21.5.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-json/4.1.1/spring-boot-starter-json-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.1/spring-boot-jackson-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/tools/jackson/core/jackson-databind/3.1.5/jackson-databind-3.1.5.jar:/Users/hanumanthuraovaddi/.m2/repository/tools/jackson/core/jackson-core/3.1.5/jackson-core-3.1.5.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-starter-security/4.1.1/spring-boot-starter-security-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/boot/spring-boot-security/4.1.1/spring-boot-security-4.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-config/7.1.1/spring-security-config-7.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-core/7.1.1/spring-security-core-7.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-crypto/7.1.1/spring-security-crypto-7.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/security/spring-security-web/7.1.1/spring-security-web-7.1.1.jar:/Users/hanumanthuraovaddi/.m2/repository/org/springframework/spring-aop/7.0.9/spring-aop-7.0.9.jar:/Users/hanumanthuraovaddi/.m2/repository/io/jsonwebtoken/jjwt-api/0.12.6/jjwt-api-0.12.6.jar:/Users/hanumanthuraovaddi/.m2/repository/com/razorpay/razorpay-java/1.4.8/razorpay-java-1.4.8.jar:/Users/hanumanthuraovaddi/.m2/repository/org/json/json/20231013/json-20231013.jar:/Users/hanumanthuraovaddi/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/hanumanthuraovaddi/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/hanumanthuraovaddi/.m2/repository/com/squareup/okhttp3/logging-interceptor/3.10.0/logging-interceptor-3.10.0.jar:/Users/hanumanthuraovaddi/.m2/repository/commons-codec/commons-codec/1.21.0/commons-codec-1.21.0.jar:/Users/hanumanthuraovaddi/.m2/repository/org/apache/commons/commons-text/1.3/commons-text-1.3.jar:/Users/hanumanthuraovaddi/.m2/repository/org/apache/commons/commons-lang3/3.20.0/commons-lang3-3.20.0.jar: -sourcepath /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java: -s /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/generated-sources/annotations -processorpath /Users/hanumanthuraovaddi/.m2/repository/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar: -g -parameters --release 21 -encoding UTF-8 -XDuseUnsharedTable=true
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 83 source files with javac [debug parameters release 21] to target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[20,1] a type with the same simple name is already defined by the single-type-import of com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[30,21] cannot find symbol
+  symbol:   method getPassword()
+  location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[36,21] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[37,21] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[38,21] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[43,21] cannot find symbol
+  symbol:   method getEmail()
+  location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[44,21] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[45,21] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/kafka/PaymentEventConsumer.java:[44,31] cannot find symbol
+  symbol:   method builder()
+  location: class com.hanu.AiEcommerce.common.event.ProcessedEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[39,28] cannot find symbol
+  symbol:   method builder()
+  location: class com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[55,28] cannot find symbol
+  symbol:   method getId()
+  location: variable product of type com.hanu.AiEcommerce.product.entity.Product
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[59,43] cannot find symbol
+  symbol:   method getPrice()
+  location: variable product of type com.hanu.AiEcommerce.product.entity.Product
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[65,44] cannot find symbol
+  symbol:   method builder()
+  location: class com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[66,39] cannot find symbol
+  symbol:   method getId()
+  location: variable product of type com.hanu.AiEcommerce.product.entity.Product
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[77,14] cannot find symbol
+  symbol:   method setTotal(java.math.BigDecimal)
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[92,18] cannot find symbol
+  symbol:   method getUserId()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[117,18] cannot find symbol
+  symbol:   method getUserId()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[123,18] cannot find symbol
+  symbol:   method getStatus()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[129,35] cannot find symbol
+  symbol:   method getItems()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[132,25] cannot find symbol
+  symbol:   method getProductId()
+  location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[133,25] cannot find symbol
+  symbol:   method getQuantity()
+  location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[137,14] cannot find symbol
+  symbol:   method setStatus(com.hanu.AiEcommerce.order.enums.OrderStatus)
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[152,18] cannot find symbol
+  symbol:   method getStatus()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[154,68] cannot find symbol
+  symbol:   method getStatus()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[158,14] cannot find symbol
+  symbol:   method setStatus(com.hanu.AiEcommerce.order.enums.OrderStatus)
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[173,18] cannot find symbol
+  symbol:   method getStatus()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[175,68] cannot find symbol
+  symbol:   method getStatus()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[179,35] cannot find symbol
+  symbol:   method getItems()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[182,25] cannot find symbol
+  symbol:   method getProductId()
+  location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[183,25] cannot find symbol
+  symbol:   method getQuantity()
+  location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[187,14] cannot find symbol
+  symbol:   method setStatus(com.hanu.AiEcommerce.order.enums.OrderStatus)
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[198,46] cannot find symbol
+  symbol:   method getItems()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[209,22] cannot find symbol
+  symbol:   method getId()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[210,22] cannot find symbol
+  symbol:   method getUserId()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[211,22] cannot find symbol
+  symbol:   method getStatus()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[212,22] cannot find symbol
+  symbol:   method getTotal()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[214,22] cannot find symbol
+  symbol:   method getVersion()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[215,22] cannot find symbol
+  symbol:   method getCreateAt()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[216,22] cannot find symbol
+  symbol:   method getUpdatedAt()
+  location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/entity/Order.java:[89,13] cannot find symbol
+  symbol:   method setOrder(com.hanu.AiEcommerce.order.entity.Order)
+  location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/entity/Order.java:[94,13] cannot find symbol
+  symbol:   method setOrder(<nulltype>)
+  location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[60,40] cannot find symbol
+  symbol:   method builder()
+  location: class com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[102,26] cannot find symbol
+  symbol:   method getQuantity()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[105,36] cannot find symbol
+  symbol:   method getReservedQuantity()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[117,18] cannot find symbol
+  symbol:   method setQuantity(int)
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[146,26] cannot find symbol
+  symbol:   method getReservedQuantity()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[169,33] cannot find symbol
+  symbol:   method getReservedQuantity()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[176,26] cannot find symbol
+  symbol:   method getReservedQuantity()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[184,26] cannot find symbol
+  symbol:   method getId()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[185,26] cannot find symbol
+  symbol:   method getProductId()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[186,26] cannot find symbol
+  symbol:   method getQuantity()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[187,26] cannot find symbol
+  symbol:   method getReservedQuantity()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[189,26] cannot find symbol
+  symbol:   method getVersion()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[190,26] cannot find symbol
+  symbol:   method getCreatedAt()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[191,26] cannot find symbol
+  symbol:   method getUpdatedAt()
+  location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[39,48] cannot find symbol
+  symbol:   method getId()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[46,30] cannot find symbol
+  symbol:   method getPayload()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[52,30] cannot find symbol
+  symbol:   method getAggregateId()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[56,22] cannot find symbol
+  symbol:   method setNextAttemptAt(<nulltype>)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[57,22] cannot find symbol
+  symbol:   method setLastError(<nulltype>)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[58,22] cannot find symbol
+  symbol:   method setStatus(com.hanu.AiEcommerce.common.outbox.OutboxStatus)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[59,22] cannot find symbol
+  symbol:   method setProcessingStartedAt(<nulltype>)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[65,42] cannot find symbol
+  symbol:   method getRetryCount()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[66,22] cannot find symbol
+  symbol:   method setLastAttemptAt(java.time.LocalDateTime)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[67,22] cannot find symbol
+  symbol:   method setLastError(java.lang.String)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[73,22] cannot find symbol
+  symbol:   method setStatus(com.hanu.AiEcommerce.common.outbox.OutboxStatus)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[74,22] cannot find symbol
+  symbol:   method setProcessingStartedAt(<nulltype>)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[76,26] cannot find symbol
+  symbol:   method getRetryCount()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[78,26] cannot find symbol
+  symbol:   method setStatus(com.hanu.AiEcommerce.common.outbox.OutboxStatus)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[79,26] cannot find symbol
+  symbol:   method setNextAttemptAt(<nulltype>)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[80,26] cannot find symbol
+  symbol:   method setProcessingStartedAt(<nulltype>)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[84,44] cannot find symbol
+  symbol:   method getEventId()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[85,63] cannot find symbol
+  symbol:   method getRetryCount()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[95,30] cannot find symbol
+  symbol:   method getRetryCount()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[102,22] cannot find symbol
+  symbol:   method setNextAttemptAt(java.time.LocalDateTime)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[110,40] cannot find symbol
+  symbol:   method getEventId()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[111,59] cannot find symbol
+  symbol:   method getRetryCount()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[112,62] cannot find symbol
+  symbol:   method getNextAttemptAt()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[129,18] cannot find symbol
+  symbol:   method setStatus(com.hanu.AiEcommerce.common.outbox.OutboxStatus)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[130,18] cannot find symbol
+  symbol:   method setProcessingStartedAt(<nulltype>)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[131,18] cannot find symbol
+  symbol:   method setNextAttemptAt(java.time.LocalDateTime)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[132,18] cannot find symbol
+  symbol:   method setLastError(java.lang.String)
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[138,36] cannot find symbol
+  symbol:   method getEventId()
+  location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventService.java:[31,50] cannot find symbol
+  symbol:   method builder()
+  location: class com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[49,9] reference to Order is ambiguous
+  both class com.hanu.AiEcommerce.order.entity.Order in com.hanu.AiEcommerce.order.entity and class com.razorpay.Order in com.razorpay match
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[94,13] reference to Order is ambiguous
+  both class com.hanu.AiEcommerce.order.entity.Order in com.hanu.AiEcommerce.order.entity and class com.razorpay.Order in com.razorpay match
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[99,38] cannot find symbol
+  symbol:   method builder()
+  location: class com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[131,20] cannot find symbol
+  symbol:   method getStatus()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[133,71] cannot find symbol
+  symbol:   method getStatus()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[137,16] cannot find symbol
+  symbol:   method setStatus(com.hanu.AiEcommerce.payment.enums.PaymentStatus)
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[138,16] cannot find symbol
+  symbol:   method setTransactionId(java.lang.String)
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[144,24] cannot find symbol
+  symbol:   method getId()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[145,24] cannot find symbol
+  symbol:   method getOrderId()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[146,24] cannot find symbol
+  symbol:   method getTransactionId()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[152,24] cannot find symbol
+  symbol:   method getId()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[165,24] cannot find symbol
+  symbol:   method getId()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[166,24] cannot find symbol
+  symbol:   method getOrderId()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[167,24] cannot find symbol
+  symbol:   method getAmount()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[168,24] cannot find symbol
+  symbol:   method getStatus()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[169,24] cannot find symbol
+  symbol:   method getTransactionId()
+  location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[DEBUG] Adding /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/target/generated-sources/annotations to the project compile source roots but NOT the actual compile source roots:
+  /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.498 s
+[INFO] Finished at: 2026-10-10T14:46:31+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project aiecommerce: Compilation failure: Compilation failure: 
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[20,1] a type with the same simple name is already defined by the single-type-import of com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[30,21] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[36,21] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[37,21] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[38,21] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[43,21] cannot find symbol
+[ERROR]   symbol:   method getEmail()
+[ERROR]   location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[44,21] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/auth/AuthService.java:[45,21] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.hanu.AiEcommerce.user.entity.User
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/kafka/PaymentEventConsumer.java:[44,31] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hanu.AiEcommerce.common.event.ProcessedEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[39,28] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[55,28] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable product of type com.hanu.AiEcommerce.product.entity.Product
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[59,43] cannot find symbol
+[ERROR]   symbol:   method getPrice()
+[ERROR]   location: variable product of type com.hanu.AiEcommerce.product.entity.Product
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[65,44] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[66,39] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable product of type com.hanu.AiEcommerce.product.entity.Product
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[77,14] cannot find symbol
+[ERROR]   symbol:   method setTotal(java.math.BigDecimal)
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[92,18] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[117,18] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[123,18] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[129,35] cannot find symbol
+[ERROR]   symbol:   method getItems()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[132,25] cannot find symbol
+[ERROR]   symbol:   method getProductId()
+[ERROR]   location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[133,25] cannot find symbol
+[ERROR]   symbol:   method getQuantity()
+[ERROR]   location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[137,14] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.hanu.AiEcommerce.order.enums.OrderStatus)
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[152,18] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[154,68] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[158,14] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.hanu.AiEcommerce.order.enums.OrderStatus)
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[173,18] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[175,68] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[179,35] cannot find symbol
+[ERROR]   symbol:   method getItems()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[182,25] cannot find symbol
+[ERROR]   symbol:   method getProductId()
+[ERROR]   location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[183,25] cannot find symbol
+[ERROR]   symbol:   method getQuantity()
+[ERROR]   location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[187,14] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.hanu.AiEcommerce.order.enums.OrderStatus)
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[198,46] cannot find symbol
+[ERROR]   symbol:   method getItems()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[209,22] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[210,22] cannot find symbol
+[ERROR]   symbol:   method getUserId()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[211,22] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[212,22] cannot find symbol
+[ERROR]   symbol:   method getTotal()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[214,22] cannot find symbol
+[ERROR]   symbol:   method getVersion()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[215,22] cannot find symbol
+[ERROR]   symbol:   method getCreateAt()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/service/OrderService.java:[216,22] cannot find symbol
+[ERROR]   symbol:   method getUpdatedAt()
+[ERROR]   location: variable order of type com.hanu.AiEcommerce.order.entity.Order
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/entity/Order.java:[89,13] cannot find symbol
+[ERROR]   symbol:   method setOrder(com.hanu.AiEcommerce.order.entity.Order)
+[ERROR]   location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/order/entity/Order.java:[94,13] cannot find symbol
+[ERROR]   symbol:   method setOrder(<nulltype>)
+[ERROR]   location: variable item of type com.hanu.AiEcommerce.order.entity.OrderItem
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[60,40] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[102,26] cannot find symbol
+[ERROR]   symbol:   method getQuantity()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[105,36] cannot find symbol
+[ERROR]   symbol:   method getReservedQuantity()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[117,18] cannot find symbol
+[ERROR]   symbol:   method setQuantity(int)
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[146,26] cannot find symbol
+[ERROR]   symbol:   method getReservedQuantity()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[169,33] cannot find symbol
+[ERROR]   symbol:   method getReservedQuantity()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[176,26] cannot find symbol
+[ERROR]   symbol:   method getReservedQuantity()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[184,26] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[185,26] cannot find symbol
+[ERROR]   symbol:   method getProductId()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[186,26] cannot find symbol
+[ERROR]   symbol:   method getQuantity()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[187,26] cannot find symbol
+[ERROR]   symbol:   method getReservedQuantity()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[189,26] cannot find symbol
+[ERROR]   symbol:   method getVersion()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[190,26] cannot find symbol
+[ERROR]   symbol:   method getCreatedAt()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/inventory/service/InventoryService.java:[191,26] cannot find symbol
+[ERROR]   symbol:   method getUpdatedAt()
+[ERROR]   location: variable inventory of type com.hanu.AiEcommerce.inventory.entity.Inventory
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[39,48] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[46,30] cannot find symbol
+[ERROR]   symbol:   method getPayload()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[52,30] cannot find symbol
+[ERROR]   symbol:   method getAggregateId()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[56,22] cannot find symbol
+[ERROR]   symbol:   method setNextAttemptAt(<nulltype>)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[57,22] cannot find symbol
+[ERROR]   symbol:   method setLastError(<nulltype>)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[58,22] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.hanu.AiEcommerce.common.outbox.OutboxStatus)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[59,22] cannot find symbol
+[ERROR]   symbol:   method setProcessingStartedAt(<nulltype>)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[65,42] cannot find symbol
+[ERROR]   symbol:   method getRetryCount()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[66,22] cannot find symbol
+[ERROR]   symbol:   method setLastAttemptAt(java.time.LocalDateTime)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[67,22] cannot find symbol
+[ERROR]   symbol:   method setLastError(java.lang.String)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[73,22] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.hanu.AiEcommerce.common.outbox.OutboxStatus)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[74,22] cannot find symbol
+[ERROR]   symbol:   method setProcessingStartedAt(<nulltype>)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[76,26] cannot find symbol
+[ERROR]   symbol:   method getRetryCount()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[78,26] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.hanu.AiEcommerce.common.outbox.OutboxStatus)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[79,26] cannot find symbol
+[ERROR]   symbol:   method setNextAttemptAt(<nulltype>)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[80,26] cannot find symbol
+[ERROR]   symbol:   method setProcessingStartedAt(<nulltype>)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[84,44] cannot find symbol
+[ERROR]   symbol:   method getEventId()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[85,63] cannot find symbol
+[ERROR]   symbol:   method getRetryCount()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[95,30] cannot find symbol
+[ERROR]   symbol:   method getRetryCount()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[102,22] cannot find symbol
+[ERROR]   symbol:   method setNextAttemptAt(java.time.LocalDateTime)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[110,40] cannot find symbol
+[ERROR]   symbol:   method getEventId()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[111,59] cannot find symbol
+[ERROR]   symbol:   method getRetryCount()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[112,62] cannot find symbol
+[ERROR]   symbol:   method getNextAttemptAt()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[129,18] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.hanu.AiEcommerce.common.outbox.OutboxStatus)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[130,18] cannot find symbol
+[ERROR]   symbol:   method setProcessingStartedAt(<nulltype>)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[131,18] cannot find symbol
+[ERROR]   symbol:   method setNextAttemptAt(java.time.LocalDateTime)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[132,18] cannot find symbol
+[ERROR]   symbol:   method setLastError(java.lang.String)
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventPublisher.java:[138,36] cannot find symbol
+[ERROR]   symbol:   method getEventId()
+[ERROR]   location: variable event of type com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/common/outbox/OutboxEventService.java:[31,50] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hanu.AiEcommerce.common.outbox.OutboxEvent
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[49,9] reference to Order is ambiguous
+[ERROR]   both class com.hanu.AiEcommerce.order.entity.Order in com.hanu.AiEcommerce.order.entity and class com.razorpay.Order in com.razorpay match
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[94,13] reference to Order is ambiguous
+[ERROR]   both class com.hanu.AiEcommerce.order.entity.Order in com.hanu.AiEcommerce.order.entity and class com.razorpay.Order in com.razorpay match
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[99,38] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[131,20] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[133,71] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[137,16] cannot find symbol
+[ERROR]   symbol:   method setStatus(com.hanu.AiEcommerce.payment.enums.PaymentStatus)
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[138,16] cannot find symbol
+[ERROR]   symbol:   method setTransactionId(java.lang.String)
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[144,24] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[145,24] cannot find symbol
+[ERROR]   symbol:   method getOrderId()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[146,24] cannot find symbol
+[ERROR]   symbol:   method getTransactionId()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[152,24] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[165,24] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[166,24] cannot find symbol
+[ERROR]   symbol:   method getOrderId()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[167,24] cannot find symbol
+[ERROR]   symbol:   method getAmount()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[168,24] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] /Users/hanumanthuraovaddi/Projects/AiEcommerceBackend/src/main/java/com/hanu/AiEcommerce/payment/service/PaymentService.java:[169,24] cannot find symbol
+[ERROR]   symbol:   method getTransactionId()
+[ERROR]   location: variable payment of type com.hanu.AiEcommerce.payment.entity.Payment
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project aiecommerce: Compilation failure
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:333)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.apache.maven.plugin.compiler.CompilationFailureException: Compilation failure
+    at org.apache.maven.plugin.compiler.AbstractCompilerMojo.executeReal (AbstractCompilerMojo.java:1319)
+    at org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute (AbstractCompilerMojo.java:708)
+    at org.apache.maven.plugin.compiler.CompilerMojo.execute (CompilerMojo.java:235)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[DEBUG] Shutting down adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gaecv, file-gav, file-hgaecv, file-hgav, file-static, gaecv, gav, static]
+[DEBUG] Shutting down 'file-lock' factory
+[DEBUG] Shutting down 'rwlock-local' factory
+[DEBUG] Shutting down 'semaphore-local' factory
+[DEBUG] Shutting down 'noop' factory

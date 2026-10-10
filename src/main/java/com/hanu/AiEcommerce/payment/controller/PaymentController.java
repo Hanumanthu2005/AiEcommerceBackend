@@ -3,11 +3,13 @@ package com.hanu.AiEcommerce.payment.controller;
 import com.hanu.AiEcommerce.payment.dto.PaymentRequest;
 import com.hanu.AiEcommerce.payment.dto.PaymentResponse;
 import com.hanu.AiEcommerce.payment.dto.PaymentStatusUpdateRequest;
+import com.hanu.AiEcommerce.payment.dto.VerifyPaymentRequest;
 import com.hanu.AiEcommerce.payment.service.PaymentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -21,31 +23,29 @@ public class PaymentController {
     public ResponseEntity<PaymentResponse> createPayment(
             @Valid
             @RequestBody
-            PaymentRequest request
+            PaymentRequest request,
+
+            Authentication authentication
     ) {
+
+        Long userId = Long.parseLong(authentication.getName());
+
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(
-                        paymentService.createPayment(request)
+                        paymentService.createPayment(request, userId)
                 );
     }
 
-    @PatchMapping("/{paymentId}/status")
-    public ResponseEntity<PaymentResponse> updatePaymentStatus(
-            @PathVariable
-            Long paymentId,
-
-            @Valid
-            @RequestBody
-            PaymentStatusUpdateRequest request
+    @PostMapping("/verify")
+    public ResponseEntity<PaymentResponse> verifyPayment(
+            @Valid @RequestBody VerifyPaymentRequest request,
+            Authentication authentication
     ) {
+        Long userId = Long.parseLong(authentication.getName());
 
         return ResponseEntity.ok(
-                paymentService.updatePaymentStatus(
-                        paymentId,
-                        request.status(),
-                        request.transactionId()
-                )
+                paymentService.verifyPayment(request, userId)
         );
     }
 }

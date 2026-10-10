@@ -98,6 +98,9 @@ public class SecurityConfig {
                         .requestMatchers("/api/v1/orders", "/api/v1/orders/**")
                         .hasRole("CUSTOMER")
 
+                        .requestMatchers("/api/v1/payments/**")
+                        .hasRole("CUSTOMER")
+
                         .anyRequest().authenticated()
                 )
 

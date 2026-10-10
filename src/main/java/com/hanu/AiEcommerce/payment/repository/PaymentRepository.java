@@ -17,4 +17,6 @@ public interface PaymentRepository extends JpaRepository<Payment, Long> {
     boolean existsByTransactionId(String transactionId);
 
     long countByStatus(PaymentStatus status);
+
+    Optional<Payment> findByRazorpayOrderId(String razorpayOrderId);
 }

@@ -51,6 +51,9 @@ public class Payment {
     @Column(name = "transaction_id", length = 200)
     private String transactionId;
 
+    @Column(name = "razorpay_order_id", unique = true, length = 100)
+    private String razorpayOrderId;
+
     @Version
     @Column(nullable = false)
     private Long version;
