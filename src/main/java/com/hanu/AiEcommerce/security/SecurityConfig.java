@@ -1,3 +1,4 @@
+
 package com.hanu.AiEcommerce.security;
 
 import jakarta.servlet.http.HttpServletResponse;
@@ -7,10 +8,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
@@ -27,29 +30,53 @@ public class SecurityConfig {
 
     @Bean
     public AuthenticationEntryPoint authenticationEntryPoint() {
-        return (request, response, authException) ->
+        return (request, response, exception) ->
                 response.sendError(
                         HttpServletResponse.SC_UNAUTHORIZED,
-                        "Unauthorized"
+                        "Unauthorized: valid authentication is required"
                 );
     }
 
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    public AccessDeniedHandler accessDeniedHandler() {
+        return (request, response, exception) ->
+                response.sendError(
+                        HttpServletResponse.SC_FORBIDDEN,
+                        "Forbidden: you do not have permission to access this resource"
+                );
+    }
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(
+            HttpSecurity http
+    ) throws Exception {
 
         http
                 .csrf(csrf -> csrf.disable())
+
+                .sessionManagement(session -> session
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                )
+
+                .exceptionHandling(exception -> exception
+                        .authenticationEntryPoint(authenticationEntryPoint())
+                        .accessDeniedHandler(accessDeniedHandler())
+                )
+
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/api/v1/users",
                                 "/api/v1/auth/login"
                         ).permitAll()
 
-                        .requestMatchers(HttpMethod.POST, "/api/v1/categories")
-                        .hasAnyRole("ROLE_ADMIN", "ROLE_SELLER")
+                        .requestMatchers(
+                                HttpMethod.POST,
+                                "/api/v1/categories"
+                        ).hasAnyRole("ADMIN", "SELLER")
 
                         .anyRequest().authenticated()
                 )
+
                 .addFilterBefore(
                         jwtAuthenticationFilter,
                         UsernamePasswordAuthenticationFilter.class

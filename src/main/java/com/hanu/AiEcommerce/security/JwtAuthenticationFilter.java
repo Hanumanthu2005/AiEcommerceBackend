@@ -1,3 +1,4 @@
+
 package com.hanu.AiEcommerce.security;
 
 import io.jsonwebtoken.Claims;
@@ -18,6 +19,8 @@ import javax.crypto.SecretKey;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
+import java.util.Locale;
+import java.util.Set;
 
 @Component
 @RequiredArgsConstructor
@@ -25,6 +28,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     @Value("${app.jwt.secret}")
     private String secret;
+
+    private static final Set<String> ALLOWED_ROLES =
+            Set.of("ADMIN", "SELLER", "CUSTOMER");
 
     private SecretKey getSigningKey() {
         return io.jsonwebtoken.security.Keys.hmacShaKeyFor(
@@ -46,7 +52,15 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             return;
         }
 
-        String token = authHeader.substring(7);
+        String token = authHeader.substring(7).trim();
+
+        if (token.isEmpty()) {
+            response.sendError(
+                    HttpServletResponse.SC_UNAUTHORIZED,
+                    "Empty bearer token"
+            );
+            return;
+        }
 
         try {
             Claims claims = Jwts.parser()
@@ -56,28 +70,52 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     .getPayload();
 
             String userId = claims.getSubject();
-            String email = claims.get("email", String.class);
             String role = claims.get("role", String.class);
 
-            var authorities = List.of(
-                    new SimpleGrantedAuthority("ROLE_" + role)
-            );
+            if (userId == null || userId.isBlank()
+                    || role == null || role.isBlank()) {
+                throw new IllegalArgumentException(
+                        "Required JWT claims are missing"
+                );
+            }
+
+            // Accept ADMIN or ROLE_ADMIN in the JWT claim.
+            role = role.trim().toUpperCase(Locale.ROOT);
+
+            if (role.startsWith("ROLE_")) {
+                role = role.substring("ROLE_".length());
+            }
+
+            if (!ALLOWED_ROLES.contains(role)) {
+                throw new IllegalArgumentException(
+                        "Invalid role in JWT"
+                );
+            }
 
             var authentication =
                     new UsernamePasswordAuthenticationToken(
                             userId,
                             null,
-                            authorities
+                            List.of(new SimpleGrantedAuthority("ROLE_" + role))
                     );
 
-            authentication.setDetails(email);
+            authentication.setDetails(
+                    request.getRemoteAddr()
+            );
 
-            SecurityContextHolder
-                    .getContext()
+            SecurityContextHolder.getContext()
                     .setAuthentication(authentication);
 
-        } catch (Exception e) {
+        } catch (io.jsonwebtoken.JwtException
+                 | IllegalArgumentException exception) {
+
             SecurityContextHolder.clearContext();
+
+            response.sendError(
+                    HttpServletResponse.SC_UNAUTHORIZED,
+                    "Invalid or expired JWT"
+            );
+            return;
         }
 
         filterChain.doFilter(request, response);
