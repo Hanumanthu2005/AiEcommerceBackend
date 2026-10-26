@@ -10,6 +10,7 @@ public record ProductResponse(
         Long id,
         String name,
         String description,
+        String imageUrl,
         String sku,
         BigDecimal price,
         Long sellerId,

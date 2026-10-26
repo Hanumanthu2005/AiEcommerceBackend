@@ -34,6 +34,9 @@ public record CreateProductRequest(
         Long sellerId,
 
         @NotNull(message = "Category id is required")
-        Long categoryId
+        Long categoryId,
+
+        @Size(max = 2048, message = "Image url must not exceed 2048 characters")
+        String imageUrl
 ) {
 }
