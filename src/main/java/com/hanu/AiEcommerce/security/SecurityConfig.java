@@ -115,6 +115,16 @@ public class SecurityConfig {
 
                         .requestMatchers(
                                 HttpMethod.POST,
+                                "/api/v1/product-images"
+                        ).hasAnyRole("ADMIN", "SELLER")
+
+                        .requestMatchers(
+                                HttpMethod.GET,
+                                "/uploads/products/**"
+                        ).permitAll()
+
+                        .requestMatchers(
+                                HttpMethod.POST,
                                 "/api/v1/categories"
                         ).hasAnyRole("ADMIN", "SELLER")
 
